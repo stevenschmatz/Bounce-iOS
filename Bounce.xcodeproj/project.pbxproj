@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
+		28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */; };
+		28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDD1A4897EA0014929D /* Fabric.framework */; };
 		288547B31A4896E100FAC16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288547B21A4896E100FAC16F /* AppDelegate.swift */; };
 		288547B61A4896E100FAC16F /* Bounce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 288547B41A4896E100FAC16F /* Bounce.xcdatamodeld */; };
 		288547B81A4896E100FAC16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288547B71A4896E100FAC16F /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28008EDB1A4897EA0014929D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		28008EDD1A4897EA0014929D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		288547AD1A4896E100FAC16F /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288547B11A4896E100FAC16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288547B21A4896E100FAC16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */,
+				28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,9 @@
 		288547A41A4896E100FAC16F = {
 			isa = PBXGroup;
 			children = (
+				28008EDB1A4897EA0014929D /* TwitterKit.framework */,
+				28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */,
+				28008EDD1A4897EA0014929D /* Fabric.framework */,
 				288547AF1A4896E100FAC16F /* Bounce */,
 				288547C81A4896E100FAC16F /* BounceTests */,
 				288547AE1A4896E100FAC16F /* Products */,
@@ -125,6 +136,7 @@
 				288547A91A4896E100FAC16F /* Sources */,
 				288547AA1A4896E100FAC16F /* Frameworks */,
 				288547AB1A4896E100FAC16F /* Resources */,
+				28008EDA1A4897DB0014929D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */,
 				288547BB1A4896E100FAC16F /* Main.storyboard in Resources */,
 				288547C01A4896E100FAC16F /* LaunchScreen.xib in Resources */,
 				288547BD1A4896E100FAC16F /* Images.xcassets in Resources */,
@@ -209,6 +222,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28008EDA1A4897DB0014929D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b2643dac212b3497378982c15f958e0d12221fec 049aac516f8e4d58ff286e261ed99239536ce8a054f405dfe36df2686894a676";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		288547A91A4896E100FAC16F /* Sources */ = {
@@ -342,6 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Bounce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +385,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Bounce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +448,7 @@
 				288547D11A4896E100FAC16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		288547D21A4896E100FAC16F /* Build configuration list for PBXNativeTarget "BounceTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +457,7 @@
 				288547D41A4896E100FAC16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

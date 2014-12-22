@@ -10,6 +10,7 @@
 		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
 		28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */; };
 		28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDD1A4897EA0014929D /* Fabric.framework */; };
+		28008EE41A48A1FA0014929D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EE31A48A1FA0014929D /* Crashlytics.framework */; };
 		288547B31A4896E100FAC16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288547B21A4896E100FAC16F /* AppDelegate.swift */; };
 		288547B61A4896E100FAC16F /* Bounce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 288547B41A4896E100FAC16F /* Bounce.xcdatamodeld */; };
 		288547B81A4896E100FAC16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288547B71A4896E100FAC16F /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		28008EDB1A4897EA0014929D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		28008EDD1A4897EA0014929D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		28008EE31A48A1FA0014929D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		288547AD1A4896E100FAC16F /* Bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288547B11A4896E100FAC16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		288547B21A4896E100FAC16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */,
+				28008EE41A48A1FA0014929D /* Crashlytics.framework in Frameworks */,
 				28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +72,7 @@
 		288547A41A4896E100FAC16F = {
 			isa = PBXGroup;
 			children = (
+				28008EE31A48A1FA0014929D /* Crashlytics.framework */,
 				28008EDB1A4897EA0014929D /* TwitterKit.framework */,
 				28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */,
 				28008EDD1A4897EA0014929D /* Fabric.framework */,

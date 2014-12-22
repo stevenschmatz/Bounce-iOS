@@ -12,12 +12,16 @@
 	<dict>
 		<key>0F4B07D4C1ED3D0E4252D17A2B8D0E50CDD13ED4</key>
 		<string>https://github.com/stevenschmatz/Bounce-iOS.git</string>
+		<key>EC60128B01E90958918799018A4F2F600507BE4D</key>
+		<string>https://github.com/stevenschmatz/Bounce-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Bounce.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0F4B07D4C1ED3D0E4252D17A2B8D0E50CDD13ED4</key>
+		<string>../../../Bounce-iOS</string>
+		<key>EC60128B01E90958918799018A4F2F600507BE4D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,7 +29,7 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0F4B07D4C1ED3D0E4252D17A2B8D0E50CDD13ED4</string>
+	<string>EC60128B01E90958918799018A4F2F600507BE4D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>0F4B07D4C1ED3D0E4252D17A2B8D0E50CDD13ED4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Bounce-iOS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EC60128B01E90958918799018A4F2F600507BE4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS</string>
 		</dict>
 	</array>
 </dict>

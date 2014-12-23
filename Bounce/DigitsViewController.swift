@@ -9,7 +9,7 @@
 import UIKit
 import TwitterKit
 
-class ViewController: UIViewController {
+class DigitsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

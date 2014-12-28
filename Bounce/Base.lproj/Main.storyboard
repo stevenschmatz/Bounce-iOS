@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bounce" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,12 +20,16 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="vFr-lY-3Pg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.58801027380000004" green="0.99917106739999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="backgroundContainer"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4f-bD-jkH">
-                                <rect key="frame" x="5" y="380" width="150" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4f-bD-jkH">
+                                <rect key="frame" x="16" y="380" width="139" height="60"/>
                                 <accessibility key="accessibilityConfiguration" label="Login"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="nVf-WA-KVw"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="LoginButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,18 +37,8 @@
                                     <segue destination="PpL-Ks-gER" kind="show" identifier="LaunchToLogin" id="M7R-Ti-ln1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfo-3w-ZSo">
-                                <rect key="frame" x="124" y="449" width="79" height="30"/>
-                                <state key="normal" title="Learn More">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Wki-FQ-Az6" kind="show" identifier="LaunchToLearnMore" id="xDA-29-ZSv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCy-qV-isC">
-                                <rect key="frame" x="0.0" y="380" width="150" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCy-qV-isC">
+                                <rect key="frame" x="163" y="380" width="139" height="60"/>
                                 <accessibility key="accessibilityConfiguration" label="registerButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="a3s-vH-nhK"/>
@@ -56,9 +50,20 @@
                                     <segue destination="xh1-g5-35K" kind="show" identifier="LaunchToSignup" id="Ivg-8v-mhW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfo-3w-ZSo">
+                                <rect key="frame" x="124" y="448" width="79" height="30"/>
+                                <state key="normal" title="Learn More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wki-FQ-Az6" kind="show" identifier="LaunchToLearnMore" id="xDA-29-ZSv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vFr-lY-3Pg" firstAttribute="leading" secondItem="VCy-qV-isC" secondAttribute="trailing" constant="-302" id="07U-Do-Lxa"/>
                             <constraint firstItem="N4f-bD-jkH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2MY-9v-Eri"/>
                             <constraint firstItem="Nfo-3w-ZSo" firstAttribute="top" secondItem="VCy-qV-isC" secondAttribute="bottom" constant="9" id="4uw-zD-bAK"/>
                             <constraint firstAttribute="centerX" secondItem="vFr-lY-3Pg" secondAttribute="centerX" id="6GS-6P-iAE"/>

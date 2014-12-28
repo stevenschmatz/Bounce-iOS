@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00315C371A509B62006036D5 /* registerButton@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00315C341A509B62006036D5 /* registerButton@1x.png */; };
+		00315C381A509B62006036D5 /* registerButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00315C351A509B62006036D5 /* registerButton@2x.png */; };
+		00315C391A509B62006036D5 /* registerButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00315C361A509B62006036D5 /* registerButton@3x.png */; };
+		00315C3C1A50A193006036D5 /* loginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00315C3A1A50A193006036D5 /* loginButton@2x.png */; };
+		00315C3D1A50A193006036D5 /* loginButton3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00315C3B1A50A193006036D5 /* loginButton3x.png */; };
 		008CCB1E1A4F9E9F00613DB6 /* launch@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB1D1A4F9E9F00613DB6 /* launch@1x.png */; };
 		008CCB201A4F9EB300613DB6 /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB1F1A4F9EB300613DB6 /* launch@2x.png */; };
 		008CCB221A4F9ECC00613DB6 /* launch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB211A4F9ECC00613DB6 /* launch@3x.png */; };
 		008CCB261A4FAE4400613DB6 /* loginButton@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB231A4FAE4400613DB6 /* loginButton@1x.png */; };
-		008CCB271A4FAE4400613DB6 /* loginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB241A4FAE4400613DB6 /* loginButton@2x.png */; };
-		008CCB281A4FAE4400613DB6 /* loginButton3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB251A4FAE4400613DB6 /* loginButton3x.png */; };
-		008CCB2C1A4FAE7000613DB6 /* registerButton@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB291A4FAE7000613DB6 /* registerButton@1x.png */; };
-		008CCB2D1A4FAE7000613DB6 /* registerButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB2A1A4FAE7000613DB6 /* registerButton@2x.png */; };
-		008CCB2E1A4FAE7000613DB6 /* registerButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008CCB2B1A4FAE7000613DB6 /* registerButton@3x.png */; };
-		008CCB301A50544900613DB6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CCB2F1A50544900613DB6 /* LaunchViewController.swift */; };
 		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
 		28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */; };
 		28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDD1A4897EA0014929D /* Fabric.framework */; };
@@ -41,16 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00315C341A509B62006036D5 /* registerButton@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "registerButton@1x.png"; path = "../registerButton@1x.png"; sourceTree = "<group>"; };
+		00315C351A509B62006036D5 /* registerButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "registerButton@2x.png"; path = "../registerButton@2x.png"; sourceTree = "<group>"; };
+		00315C361A509B62006036D5 /* registerButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "registerButton@3x.png"; path = "../registerButton@3x.png"; sourceTree = "<group>"; };
+		00315C3A1A50A193006036D5 /* loginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginButton@2x.png"; path = "../loginButton@2x.png"; sourceTree = "<group>"; };
+		00315C3B1A50A193006036D5 /* loginButton3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginButton3x.png; path = ../loginButton3x.png; sourceTree = "<group>"; };
 		008CCB1D1A4F9E9F00613DB6 /* launch@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@1x.png"; sourceTree = "<group>"; };
 		008CCB1F1A4F9EB300613DB6 /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
 		008CCB211A4F9ECC00613DB6 /* launch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@3x.png"; sourceTree = "<group>"; };
 		008CCB231A4FAE4400613DB6 /* loginButton@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginButton@1x.png"; sourceTree = "<group>"; };
-		008CCB241A4FAE4400613DB6 /* loginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginButton@2x.png"; sourceTree = "<group>"; };
-		008CCB251A4FAE4400613DB6 /* loginButton3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginButton3x.png; sourceTree = "<group>"; };
-		008CCB291A4FAE7000613DB6 /* registerButton@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registerButton@1x.png"; sourceTree = "<group>"; };
-		008CCB2A1A4FAE7000613DB6 /* registerButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registerButton@2x.png"; sourceTree = "<group>"; };
-		008CCB2B1A4FAE7000613DB6 /* registerButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registerButton@3x.png"; sourceTree = "<group>"; };
-		008CCB2F1A50544900613DB6 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		28008EDB1A4897EA0014929D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		28008EDD1A4897EA0014929D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -117,14 +115,13 @@
 				288547B21A4896E100FAC16F /* AppDelegate.swift */,
 				288547B71A4896E100FAC16F /* DigitsViewController.swift */,
 				288547B91A4896E100FAC16F /* Main.storyboard */,
-				008CCB2F1A50544900613DB6 /* LaunchViewController.swift */,
 				288547BC1A4896E100FAC16F /* Images.xcassets */,
-				008CCB291A4FAE7000613DB6 /* registerButton@1x.png */,
-				008CCB2A1A4FAE7000613DB6 /* registerButton@2x.png */,
-				008CCB2B1A4FAE7000613DB6 /* registerButton@3x.png */,
+				00315C341A509B62006036D5 /* registerButton@1x.png */,
+				00315C351A509B62006036D5 /* registerButton@2x.png */,
+				00315C361A509B62006036D5 /* registerButton@3x.png */,
 				008CCB231A4FAE4400613DB6 /* loginButton@1x.png */,
-				008CCB241A4FAE4400613DB6 /* loginButton@2x.png */,
-				008CCB251A4FAE4400613DB6 /* loginButton3x.png */,
+				00315C3A1A50A193006036D5 /* loginButton@2x.png */,
+				00315C3B1A50A193006036D5 /* loginButton3x.png */,
 				008CCB211A4F9ECC00613DB6 /* launch@3x.png */,
 				008CCB1F1A4F9EB300613DB6 /* launch@2x.png */,
 				008CCB1D1A4F9E9F00613DB6 /* launch@1x.png */,
@@ -241,19 +238,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008CCB2C1A4FAE7000613DB6 /* registerButton@1x.png in Resources */,
+				00315C3C1A50A193006036D5 /* loginButton@2x.png in Resources */,
+				00315C371A509B62006036D5 /* registerButton@1x.png in Resources */,
 				28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */,
 				008CCB221A4F9ECC00613DB6 /* launch@3x.png in Resources */,
+				00315C3D1A50A193006036D5 /* loginButton3x.png in Resources */,
 				288547BB1A4896E100FAC16F /* Main.storyboard in Resources */,
 				008CCB261A4FAE4400613DB6 /* loginButton@1x.png in Resources */,
 				288547C01A4896E100FAC16F /* LaunchScreen.xib in Resources */,
 				288547BD1A4896E100FAC16F /* Images.xcassets in Resources */,
-				008CCB2E1A4FAE7000613DB6 /* registerButton@3x.png in Resources */,
-				008CCB281A4FAE4400613DB6 /* loginButton3x.png in Resources */,
-				008CCB271A4FAE4400613DB6 /* loginButton@2x.png in Resources */,
+				00315C391A509B62006036D5 /* registerButton@3x.png in Resources */,
 				008CCB1E1A4F9E9F00613DB6 /* launch@1x.png in Resources */,
 				008CCB201A4F9EB300613DB6 /* launch@2x.png in Resources */,
-				008CCB2D1A4FAE7000613DB6 /* registerButton@2x.png in Resources */,
+				00315C381A509B62006036D5 /* registerButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +287,6 @@
 				288547B81A4896E100FAC16F /* DigitsViewController.swift in Sources */,
 				288547B31A4896E100FAC16F /* AppDelegate.swift in Sources */,
 				288547B61A4896E100FAC16F /* Bounce.xcdatamodeld in Sources */,
-				008CCB301A50544900613DB6 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

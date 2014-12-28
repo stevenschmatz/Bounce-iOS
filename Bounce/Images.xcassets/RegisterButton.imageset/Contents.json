@@ -1,19 +1,49 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "1x",
       "filename" : "registerButton@1x.png"
     },
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "2x",
       "filename" : "registerButton@2x.png"
     },
     {
-      "idiom" : "universal",
+      "idiom" : "iphone",
       "scale" : "3x",
       "filename" : "registerButton@3x.png"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
+    },
+    {
+      "heightClass" : "compact",
+      "idiom" : "iphone",
+      "filename" : "registerButton@1x-1.png",
+      "unassigned" : true,
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "registerButton@1x-2.png",
+      "widthClass" : "compact",
+      "unassigned" : true,
+      "scale" : "1x"
+    },
+    {
+      "heightClass" : "compact",
+      "idiom" : "iphone",
+      "filename" : "registerButton@1x-3.png",
+      "widthClass" : "compact",
+      "unassigned" : true,
+      "scale" : "1x"
     }
   ],
   "info" : {

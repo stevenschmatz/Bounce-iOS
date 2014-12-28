@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,39 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bounce (animation)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYQ-co-A7A">
-                                <rect key="frame" x="234" y="183" width="148" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4f-bD-jkH">
-                                <rect key="frame" x="0.0" y="412" width="162" height="188"/>
-                                <state key="normal" title="Log In">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="vFr-lY-3Pg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <accessibility key="accessibilityConfiguration" label="backgroundContainer"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4f-bD-jkH">
+                                <rect key="frame" x="5" y="380" width="150" height="60"/>
+                                <accessibility key="accessibilityConfiguration" label="Login"/>
+                                <state key="normal" backgroundImage="LoginButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="PpL-Ks-gER" kind="show" identifier="LaunchToLogin" id="M7R-Ti-ln1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfo-3w-ZSo">
-                                <rect key="frame" x="269" y="343" width="79" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfo-3w-ZSo">
+                                <rect key="frame" x="124" y="449" width="79" height="30"/>
                                 <state key="normal" title="Learn More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="Wki-FQ-Az6" kind="show" identifier="LaunchToLearnMore" id="xDA-29-ZSv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reach the right people in the right moment." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTW-Sy-vA1">
-                                <rect key="frame" x="142" y="314" width="333" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCy-qV-isC">
-                                <rect key="frame" x="142" y="412" width="214" height="193"/>
-                                <state key="normal" title="Sign Up">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="60" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCy-qV-isC">
+                                <rect key="frame" x="0.0" y="380" width="150" height="60"/>
+                                <accessibility key="accessibilityConfiguration" label="registerButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="a3s-vH-nhK"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="RegisterButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -57,6 +58,33 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N4f-bD-jkH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2MY-9v-Eri"/>
+                            <constraint firstItem="Nfo-3w-ZSo" firstAttribute="top" secondItem="VCy-qV-isC" secondAttribute="bottom" constant="9" id="4uw-zD-bAK"/>
+                            <constraint firstAttribute="centerX" secondItem="vFr-lY-3Pg" secondAttribute="centerX" id="6GS-6P-iAE"/>
+                            <constraint firstItem="Nfo-3w-ZSo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="124" id="790-6q-GQw"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="baseline" secondItem="N4f-bD-jkH" secondAttribute="baseline" id="82K-r3-5L5"/>
+                            <constraint firstItem="vFr-lY-3Pg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A9z-Vk-gXI"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="163" id="Dic-GS-V0t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VCy-qV-isC" secondAttribute="trailing" constant="265" id="HxQ-bt-5Qh"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="top" secondItem="N4f-bD-jkH" secondAttribute="top" id="Ldp-S0-HN5"/>
+                            <constraint firstItem="Nfo-3w-ZSo" firstAttribute="top" secondItem="VCy-qV-isC" secondAttribute="bottom" constant="9" id="NBO-gC-NjY"/>
+                            <constraint firstItem="vFr-lY-3Pg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RHr-PY-tbw"/>
+                            <constraint firstItem="Nfo-3w-ZSo" firstAttribute="top" secondItem="N4f-bD-jkH" secondAttribute="bottom" constant="9" id="Uco-fB-54y"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="leading" secondItem="N4f-bD-jkH" secondAttribute="trailing" constant="8" symbolic="YES" id="ZOD-S2-nst"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vFr-lY-3Pg" secondAttribute="bottom" id="aaG-G2-IYj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VCy-qV-isC" secondAttribute="trailing" id="eJV-AX-VDO"/>
+                            <constraint firstAttribute="trailing" secondItem="vFr-lY-3Pg" secondAttribute="trailing" id="eu2-6f-AC5"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="bottom" secondItem="N4f-bD-jkH" secondAttribute="bottom" id="grJ-ok-rc7"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="360" id="lg0-VR-nuT"/>
+                            <constraint firstItem="VCy-qV-isC" firstAttribute="firstBaseline" secondItem="N4f-bD-jkH" secondAttribute="firstBaseline" id="qFF-db-Lqn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HxQ-bt-5Qh"/>
+                                <exclude reference="eJV-AX-VDO"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -643,12 +671,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best of all, don't worry about bugging them." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-3m-zBl">
-                                <rect key="frame" x="131" y="104" width="338" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(...Because you'll never be.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suw-Wz-1FE">
                                 <rect key="frame" x="176" y="133" width="212" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -669,6 +691,12 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="So, you're always in good company." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkH-pI-VoI">
                                 <rect key="frame" x="176" y="462" width="277" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't worry about bugging them." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-3m-zBl">
+                                <rect key="frame" x="163" y="104" width="254" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -735,9 +763,14 @@
             <point key="canvasLocation" x="2416" y="352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LoginButton" width="158" height="61"/>
+        <image name="RegisterButton" width="158" height="61"/>
+        <image name="launch" width="321" height="481"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EyZ-CU-MYa"/>
         <segue reference="Ivg-8v-mhW"/>
-        <segue reference="WSv-Gf-VFj"/>
+        <segue reference="cpP-Mn-WTH"/>
     </inferredMetricsTieBreakers>
 </document>

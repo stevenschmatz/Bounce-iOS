@@ -101,9 +101,6 @@
                                                 <include reference="NZn-K7-NUn"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="23" y="4" width="153" height="64"/>
-                                        </variation>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -861,8 +858,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LoginButton" width="158" height="61"/>
-        <image name="RegisterButton" width="157" height="60"/>
+        <image name="LoginButton" width="164" height="58"/>
+        <image name="RegisterButton" width="165" height="59"/>
         <image name="launch" width="321" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>

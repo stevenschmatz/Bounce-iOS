@@ -8,12 +8,12 @@
     {
       "idiom" : "iphone",
       "scale" : "2x",
-      "filename" : "loginButton@2x.png"
+      "filename" : "Glogin@2x.png"
     },
     {
       "idiom" : "iphone",
       "scale" : "3x",
-      "filename" : "loginButton3x.png"
+      "filename" : "GloginButton3x.png"
     },
     {
       "idiom" : "ipad",

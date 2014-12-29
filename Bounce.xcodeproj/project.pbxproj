@@ -16,6 +16,10 @@
 		008C77921A520B63004544EC /* GRegButton@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C778F1A520B63004544EC /* GRegButton@1x.png */; };
 		008C77941A520D4F004544EC /* Glaunch@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C77931A520D4F004544EC /* Glaunch@1x.png */; };
 		008C77961A520DBC004544EC /* Glaunch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C77951A520DBC004544EC /* Glaunch@2x.png */; };
+		008C779D1A5216C9004544EC /* Aicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C779B1A5216C9004544EC /* Aicon@2x.png */; };
+		008C779E1A5216C9004544EC /* Aicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C779C1A5216C9004544EC /* Aicon@3x.png */; };
+		008C77A31A5218D9004544EC /* Cicon@2x-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C77A11A5218D9004544EC /* Cicon@2x-01.png */; };
+		008C77A41A5218D9004544EC /* Cicon@3x-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C77A21A5218D9004544EC /* Cicon@3x-01.png */; };
 		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
 		28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */; };
 		28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDD1A4897EA0014929D /* Fabric.framework */; };
@@ -49,6 +53,10 @@
 		008C778F1A520B63004544EC /* GRegButton@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GRegButton@1x.png"; sourceTree = "<group>"; };
 		008C77931A520D4F004544EC /* Glaunch@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glaunch@1x.png"; sourceTree = "<group>"; };
 		008C77951A520DBC004544EC /* Glaunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Glaunch@2x.png"; path = "../Glaunch@2x.png"; sourceTree = "<group>"; };
+		008C779B1A5216C9004544EC /* Aicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aicon@2x.png"; sourceTree = "<group>"; };
+		008C779C1A5216C9004544EC /* Aicon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aicon@3x.png"; sourceTree = "<group>"; };
+		008C77A11A5218D9004544EC /* Cicon@2x-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cicon@2x-01.png"; sourceTree = "<group>"; };
+		008C77A21A5218D9004544EC /* Cicon@3x-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cicon@3x-01.png"; sourceTree = "<group>"; };
 		28008EDB1A4897EA0014929D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		28008EDD1A4897EA0014929D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -116,6 +124,8 @@
 				288547B71A4896E100FAC16F /* DigitsViewController.swift */,
 				288547B91A4896E100FAC16F /* Main.storyboard */,
 				288547BC1A4896E100FAC16F /* Images.xcassets */,
+				008C77A11A5218D9004544EC /* Cicon@2x-01.png */,
+				008C77A21A5218D9004544EC /* Cicon@3x-01.png */,
 				008C778D1A520B63004544EC /* GReg@2x.png */,
 				008C778E1A520B63004544EC /* GReg@3x.png */,
 				008C778F1A520B63004544EC /* GRegButton@1x.png */,
@@ -135,6 +145,8 @@
 		288547B01A4896E100FAC16F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				008C779B1A5216C9004544EC /* Aicon@2x.png */,
+				008C779C1A5216C9004544EC /* Aicon@3x.png */,
 				288547B11A4896E100FAC16F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -240,11 +252,15 @@
 			files = (
 				008C77861A52036D004544EC /* loginButton@1x.png in Resources */,
 				28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */,
+				008C779D1A5216C9004544EC /* Aicon@2x.png in Resources */,
 				008C77841A51FD2A004544EC /* launch@3x.png in Resources */,
 				008C77941A520D4F004544EC /* Glaunch@1x.png in Resources */,
+				008C77A41A5218D9004544EC /* Cicon@3x-01.png in Resources */,
 				288547BB1A4896E100FAC16F /* Main.storyboard in Resources */,
+				008C779E1A5216C9004544EC /* Aicon@3x.png in Resources */,
 				008C77901A520B63004544EC /* GReg@2x.png in Resources */,
 				008C778B1A520838004544EC /* Glogin@2x.png in Resources */,
+				008C77A31A5218D9004544EC /* Cicon@2x-01.png in Resources */,
 				288547C01A4896E100FAC16F /* LaunchScreen.xib in Resources */,
 				008C778C1A520838004544EC /* GloginButton3x.png in Resources */,
 				288547BD1A4896E100FAC16F /* Images.xcassets in Resources */,

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -48,11 +49,16 @@
                                                 <include reference="qzH-Y7-4P8"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="PpL-Ks-gER" kind="presentation" identifier="LaunchToLogin" id="zRs-GA-dfw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="32d-i4-lP8" secondAttribute="centerY" id="iXO-QZ-STv"/>
-                                    <constraint firstAttribute="centerX" secondItem="32d-i4-lP8" secondAttribute="centerX" constant="-0.5" id="oQq-mc-Ypb"/>
+                                    <constraint firstAttribute="centerX" secondItem="32d-i4-lP8" secondAttribute="centerX" constant="-0.5" id="oQq-mc-Ypb">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="-1.5"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="70" id="xRz-bj-bt5"/>
                                 </constraints>
                                 <variation key="default">
@@ -90,21 +96,26 @@
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="vFs-5L-Q8w"/>
                                                 <exclude reference="NZn-K7-NUn"/>
+                                                <exclude reference="vFs-5L-Q8w"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="23" y="27" width="153" height="67"/>
                                             <mask key="constraints">
-                                                <include reference="vFs-5L-Q8w"/>
                                                 <include reference="NZn-K7-NUn"/>
+                                                <include reference="vFs-5L-Q8w"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="xh1-g5-35K" kind="presentation" identifier="LaunchToRegister" id="INS-bW-mhm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="YgC-0v-KoB" secondAttribute="centerX" constant="-0.5" id="3Hd-Yy-kmC"/>
+                                    <constraint firstAttribute="centerX" secondItem="YgC-0v-KoB" secondAttribute="centerX" constant="-0.5" id="3Hd-Yy-kmC">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="-2.5"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="70" id="dfX-N2-MAh"/>
                                     <constraint firstAttribute="centerY" secondItem="YgC-0v-KoB" secondAttribute="centerY" id="pbU-Sd-jcm"/>
                                 </constraints>
@@ -132,19 +143,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dzN-g8-D8E" firstAttribute="top" secondItem="vFr-lY-3Pg" secondAttribute="bottom" constant="-78" id="5L0-qm-Pky"/>
+                            <constraint firstItem="dzN-g8-D8E" firstAttribute="top" secondItem="vFr-lY-3Pg" secondAttribute="bottom" constant="-90" id="5L0-qm-Pky"/>
                             <constraint firstAttribute="centerX" secondItem="vFr-lY-3Pg" secondAttribute="centerX" id="6GS-6P-iAE"/>
                             <constraint firstItem="s6P-eN-Z8Z" firstAttribute="height" secondItem="dzN-g8-D8E" secondAttribute="height" id="8Zm-FB-mkI"/>
                             <constraint firstItem="vFr-lY-3Pg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A9z-Vk-gXI"/>
-                            <constraint firstItem="s6P-eN-Z8Z" firstAttribute="top" secondItem="vFr-lY-3Pg" secondAttribute="bottom" constant="-78" id="F8s-yq-pNM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dzN-g8-D8E" secondAttribute="trailing" constant="-16" id="KXC-HF-eTK"/>
+                            <constraint firstItem="s6P-eN-Z8Z" firstAttribute="top" secondItem="vFr-lY-3Pg" secondAttribute="bottom" constant="-90" id="F8s-yq-pNM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dzN-g8-D8E" secondAttribute="trailing" constant="-16" id="KXC-HF-eTK">
+                                <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                            </constraint>
                             <constraint firstItem="vFr-lY-3Pg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RHr-PY-tbw"/>
-                            <constraint firstItem="s6P-eN-Z8Z" firstAttribute="width" secondItem="dzN-g8-D8E" secondAttribute="width" id="aSP-9q-EZj"/>
+                            <constraint firstItem="s6P-eN-Z8Z" firstAttribute="width" secondItem="dzN-g8-D8E" secondAttribute="width" id="aSP-9q-EZj">
+                                <variation key="heightClass=compact-widthClass=compact" constant="22"/>
+                            </constraint>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vFr-lY-3Pg" secondAttribute="bottom" id="aaG-G2-IYj"/>
                             <constraint firstAttribute="trailing" secondItem="vFr-lY-3Pg" secondAttribute="trailing" id="eu2-6f-AC5"/>
-                            <constraint firstItem="dzN-g8-D8E" firstAttribute="leading" secondItem="s6P-eN-Z8Z" secondAttribute="trailing" constant="4" id="fj5-Kh-qhc"/>
+                            <constraint firstItem="dzN-g8-D8E" firstAttribute="leading" secondItem="s6P-eN-Z8Z" secondAttribute="trailing" id="fj5-Kh-qhc">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-6"/>
+                            </constraint>
                             <constraint firstItem="s6P-eN-Z8Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="lXt-Z6-2UE"/>
-                            <constraint firstItem="dzN-g8-D8E" firstAttribute="leading" secondItem="s6P-eN-Z8Z" secondAttribute="trailing" constant="4" id="s4d-ah-BJL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -152,14 +168,13 @@
                                 <exclude reference="dzN-g8-D8E"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5L0-qm-Pky"/>
+                                <exclude reference="KXC-HF-eTK"/>
+                                <exclude reference="fj5-Kh-qhc"/>
                                 <exclude reference="8Zm-FB-mkI"/>
                                 <exclude reference="F8s-yq-pNM"/>
                                 <exclude reference="aSP-9q-EZj"/>
                                 <exclude reference="lXt-Z6-2UE"/>
-                                <exclude reference="5L0-qm-Pky"/>
-                                <exclude reference="KXC-HF-eTK"/>
-                                <exclude reference="fj5-Kh-qhc"/>
-                                <exclude reference="s4d-ah-BJL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -168,14 +183,13 @@
                                 <include reference="dzN-g8-D8E"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="5L0-qm-Pky"/>
+                                <include reference="KXC-HF-eTK"/>
+                                <include reference="fj5-Kh-qhc"/>
                                 <include reference="8Zm-FB-mkI"/>
                                 <include reference="F8s-yq-pNM"/>
                                 <include reference="aSP-9q-EZj"/>
                                 <include reference="lXt-Z6-2UE"/>
-                                <include reference="5L0-qm-Pky"/>
-                                <include reference="KXC-HF-eTK"/>
-                                <include reference="fj5-Kh-qhc"/>
-                                <include reference="s4d-ah-BJL"/>
                             </mask>
                         </variation>
                     </view>
@@ -242,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXN-JX-54h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="1037"/>
+            <point key="canvasLocation" x="157.5" y="1132.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pyl-QO-2CA">
@@ -863,6 +877,7 @@
         <image name="launch" width="321" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="INS-bW-mhm"/>
         <segue reference="cpP-Mn-WTH"/>
         <segue reference="EyZ-CU-MYa"/>
     </inferredMetricsTieBreakers>

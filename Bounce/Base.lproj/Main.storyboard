@@ -210,6 +210,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-sR-BEq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
@@ -218,16 +221,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-sR-BEq">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUt-3i-SQM">
+                                <rect key="frame" x="10" y="199" width="579" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-7K-nSe">
+                                <rect key="frame" x="10" y="311" width="579" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dUt-3i-SQM" firstAttribute="width" secondItem="3L3-7K-nSe" secondAttribute="width" id="1SS-jT-GQ1"/>
                             <constraint firstItem="J4u-sR-BEq" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-16" id="8kk-r5-tV2"/>
+                            <constraint firstItem="dUt-3i-SQM" firstAttribute="height" secondItem="3L3-7K-nSe" secondAttribute="height" id="CmT-YK-FQc"/>
+                            <constraint firstItem="dUt-3i-SQM" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-6" id="FnS-Xh-kE1"/>
                             <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="hef-2z-qJV" secondAttribute="topMargin" id="LEX-Re-zpw"/>
                             <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" id="gcE-tj-xnU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J4u-sR-BEq" secondAttribute="trailing" constant="-16" id="jam-Hd-rbF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dUt-3i-SQM" secondAttribute="trailing" constant="-5" id="qeg-U7-yvI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="nRM-0H-gMb"/>

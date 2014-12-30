@@ -213,36 +213,91 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-sR-BEq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Log In" id="K4G-pV-NGd">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="8AY-nQ-JN0"/>
                                     </navigationItem>
                                 </items>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-81" width="600" height="44"/>
+                                </variation>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUt-3i-SQM">
-                                <rect key="frame" x="10" y="199" width="579" height="46"/>
+                                <rect key="frame" x="11" y="315" width="579" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="579" id="cDr-0D-8bh"/>
+                                    <constraint firstAttribute="height" constant="36" id="y9x-7I-aHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="11" y="234" width="579" height="36"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-7K-nSe">
+                                <rect key="frame" x="10" y="203" width="579" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="579" id="1ij-w4-d4x"/>
+                                    <constraint firstAttribute="height" constant="36" id="dRX-c5-puT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-7K-nSe">
-                                <rect key="frame" x="10" y="311" width="579" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYk-4F-dBh">
+                                <rect key="frame" x="2" y="530" width="596" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="dpj-O9-D0t"/>
+                                    <constraint firstAttribute="height" constant="70" id="wQZ-Uf-5ZY"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="recoverPasswordButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dpj-O9-D0t"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC6-HO-Mmv">
+                                <rect key="frame" x="1" y="425" width="598" height="66"/>
+                                <state key="normal" image="loginPageButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WYk-4F-dBh" firstAttribute="top" secondItem="oC6-HO-Mmv" secondAttribute="bottom" constant="39" id="0Mf-H8-nql"/>
                             <constraint firstItem="dUt-3i-SQM" firstAttribute="width" secondItem="3L3-7K-nSe" secondAttribute="width" id="1SS-jT-GQ1"/>
+                            <constraint firstItem="dUt-3i-SQM" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" constant="-285" id="1cW-qt-9Zi"/>
+                            <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" id="3lr-7f-oNW"/>
                             <constraint firstItem="J4u-sR-BEq" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-16" id="8kk-r5-tV2"/>
+                            <constraint firstItem="3L3-7K-nSe" firstAttribute="top" secondItem="cAD-Tb-bFU" secondAttribute="bottom" constant="159" id="CVQ-tG-yAz"/>
                             <constraint firstItem="dUt-3i-SQM" firstAttribute="height" secondItem="3L3-7K-nSe" secondAttribute="height" id="CmT-YK-FQc"/>
-                            <constraint firstItem="dUt-3i-SQM" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-6" id="FnS-Xh-kE1"/>
+                            <constraint firstItem="dUt-3i-SQM" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-5" id="FnS-Xh-kE1"/>
                             <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="hef-2z-qJV" secondAttribute="topMargin" id="LEX-Re-zpw"/>
-                            <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" id="gcE-tj-xnU"/>
+                            <constraint firstItem="oC6-HO-Mmv" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-14" id="MyO-tZ-aFj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WYk-4F-dBh" secondAttribute="trailing" constant="-14" id="c7a-Qc-BS2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3L3-7K-nSe" secondAttribute="trailing" constant="-5" id="feP-eY-L1Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J4u-sR-BEq" secondAttribute="trailing" constant="-16" id="jam-Hd-rbF"/>
+                            <constraint firstItem="dUt-3i-SQM" firstAttribute="top" secondItem="3L3-7K-nSe" secondAttribute="bottom" constant="76" id="kZT-sX-a68"/>
+                            <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="3L3-7K-nSe" secondAttribute="bottom" constant="-239" id="lAk-fK-8o4"/>
+                            <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="WYk-4F-dBh" secondAttribute="bottom" id="oPk-AW-M5M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dUt-3i-SQM" secondAttribute="trailing" constant="-5" id="qeg-U7-yvI"/>
+                            <constraint firstItem="WYk-4F-dBh" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-14" id="xbs-nI-JR4"/>
+                            <constraint firstItem="3L3-7K-nSe" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-16" id="zXY-Ff-Nct"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oC6-HO-Mmv" secondAttribute="trailing" constant="-14" id="zce-PO-pH5"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="feP-eY-L1Y"/>
+                                <exclude reference="1cW-qt-9Zi"/>
+                                <exclude reference="FnS-Xh-kE1"/>
+                                <exclude reference="qeg-U7-yvI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="nRM-0H-gMb"/>
                 </viewController>
@@ -868,6 +923,8 @@
         <image name="RegisterButton" width="165" height="59"/>
         <image name="launch" width="321" height="481"/>
         <image name="loginBackground" width="320" height="480"/>
+        <image name="loginPageButton" width="316" height="66"/>
+        <image name="recoverPasswordButton" width="318" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="INS-bW-mhm"/>

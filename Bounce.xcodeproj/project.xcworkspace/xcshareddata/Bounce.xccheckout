@@ -12,6 +12,8 @@
 	<dict>
 		<key>0F4B07D4C1ED3D0E4252D17A2B8D0E50CDD13ED4</key>
 		<string>https://github.com/stevenschmatz/Bounce-iOS.git</string>
+		<key>76E96B9A9B43D9E2850DCCE751CBB3CAFE5C89D8</key>
+		<string>https://github.com/michaeltyson/TPKeyboardAvoiding.git</string>
 		<key>EC60128B01E90958918799018A4F2F600507BE4D</key>
 		<string>https://github.com/stevenschmatz/Bounce-iOS.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>0F4B07D4C1ED3D0E4252D17A2B8D0E50CDD13ED4</key>
 		<string>../../../Bounce-iOS</string>
+		<key>76E96B9A9B43D9E2850DCCE751CBB3CAFE5C89D8</key>
+		<string>../../../Bounce-iOS/Bounce/TPKeyboardAvoiding</string>
 		<key>EC60128B01E90958918799018A4F2F600507BE4D</key>
 		<string>../..</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>EC60128B01E90958918799018A4F2F600507BE4D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76E96B9A9B43D9E2850DCCE751CBB3CAFE5C89D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TPKeyboardAvoiding</string>
 		</dict>
 	</array>
 </dict>

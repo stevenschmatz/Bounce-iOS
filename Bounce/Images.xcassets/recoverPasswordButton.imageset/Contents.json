@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "launch@1x.png"
+      "filename" : "recoverPassword@1x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "launch@2x.png"
+      "filename" : "recoverPassword@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "launch@3x.png"
+      "filename" : "recoverPassword@3x.png"
     }
   ],
   "info" : {

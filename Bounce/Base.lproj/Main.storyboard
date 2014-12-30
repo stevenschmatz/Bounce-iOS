@@ -214,49 +214,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Log In" id="K4G-pV-NGd">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="8AY-nQ-JN0"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="8AY-nQ-JN0"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBI-Nr-EZk">
-                                <rect key="frame" x="252" y="285" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-cx-6r8">
-                                <rect key="frame" x="252" y="337" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bounce" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-yq-62w">
-                                <rect key="frame" x="271" y="215" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4U-5m-e2X">
-                                <rect key="frame" x="0.0" y="398" width="600" height="86"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ikc-7f-r4W" kind="show" identifier="LoginToChats" id="cpP-Mn-WTH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh9-RQ-sBy">
-                                <rect key="frame" x="0.0" y="492" width="600" height="58"/>
-                                <state key="normal" title="Recover Password">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-sR-BEq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J4u-sR-BEq" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-16" id="8kk-r5-tV2"/>
+                            <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="hef-2z-qJV" secondAttribute="topMargin" id="LEX-Re-zpw"/>
+                            <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" id="gcE-tj-xnU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J4u-sR-BEq" secondAttribute="trailing" constant="-16" id="jam-Hd-rbF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="nRM-0H-gMb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXN-JX-54h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157.5" y="1132.5"/>
+            <point key="canvasLocation" x="157" y="1132"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Pyl-QO-2CA">
@@ -875,10 +853,11 @@
         <image name="LoginButton" width="164" height="58"/>
         <image name="RegisterButton" width="165" height="59"/>
         <image name="launch" width="321" height="481"/>
+        <image name="loginBackground" width="320" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="INS-bW-mhm"/>
-        <segue reference="cpP-Mn-WTH"/>
         <segue reference="EyZ-CU-MYa"/>
+        <segue reference="WSv-Gf-VFj"/>
     </inferredMetricsTieBreakers>
 </document>

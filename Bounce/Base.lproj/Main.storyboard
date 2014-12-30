@@ -215,6 +215,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC6-HO-Mmv">
                                 <rect key="frame" x="1" y="425" width="598" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="m5B-KL-ucw"/>
+                                    <constraint firstAttribute="width" constant="598" id="xa6-6i-LmZ"/>
+                                </constraints>
                                 <state key="normal" image="loginPageButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -231,7 +235,7 @@
                                     <rect key="frame" x="11" y="234" width="579" height="36"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-7K-nSe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-7K-nSe">
                                 <rect key="frame" x="10" y="203" width="579" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="579" id="1ij-w4-d4x"/>
@@ -241,22 +245,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYk-4F-dBh">
-                                <rect key="frame" x="2" y="530" width="596" height="70"/>
+                                <rect key="frame" x="2" y="536" width="596" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="dpj-O9-D0t"/>
-                                    <constraint firstAttribute="height" constant="70" id="wQZ-Uf-5ZY"/>
+                                    <constraint firstAttribute="width" constant="596" id="S8p-qG-5jA"/>
+                                    <constraint firstAttribute="height" constant="64" id="wQZ-Uf-5ZY"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="recoverPasswordButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="dpj-O9-D0t"/>
-                                    </mask>
-                                </variation>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="227-kU-152"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Log In" id="K4G-pV-NGd">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="8AY-nQ-JN0"/>
@@ -274,10 +276,10 @@
                             <constraint firstItem="dUt-3i-SQM" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" constant="-285" id="1cW-qt-9Zi"/>
                             <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="J4u-sR-BEq" secondAttribute="bottom" id="3lr-7f-oNW"/>
                             <constraint firstItem="J4u-sR-BEq" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-16" id="8kk-r5-tV2"/>
-                            <constraint firstItem="3L3-7K-nSe" firstAttribute="top" secondItem="cAD-Tb-bFU" secondAttribute="bottom" constant="159" id="CVQ-tG-yAz"/>
                             <constraint firstItem="dUt-3i-SQM" firstAttribute="height" secondItem="3L3-7K-nSe" secondAttribute="height" id="CmT-YK-FQc"/>
                             <constraint firstItem="dUt-3i-SQM" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-5" id="FnS-Xh-kE1"/>
                             <constraint firstItem="cAD-Tb-bFU" firstAttribute="top" secondItem="hef-2z-qJV" secondAttribute="topMargin" id="HkC-RP-6b2"/>
+                            <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="cAD-Tb-bFU" secondAttribute="top" id="IGu-gS-11I"/>
                             <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="hef-2z-qJV" secondAttribute="topMargin" id="LEX-Re-zpw"/>
                             <constraint firstItem="oC6-HO-Mmv" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-14" id="MyO-tZ-aFj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cAD-Tb-bFU" secondAttribute="trailing" constant="-16" id="Nl5-JJ-rVl"/>
@@ -286,7 +288,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="3L3-7K-nSe" secondAttribute="trailing" constant="-5" id="feP-eY-L1Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="J4u-sR-BEq" secondAttribute="trailing" constant="-16" id="jam-Hd-rbF"/>
                             <constraint firstItem="dUt-3i-SQM" firstAttribute="top" secondItem="3L3-7K-nSe" secondAttribute="bottom" constant="76" id="kZT-sX-a68"/>
-                            <constraint firstItem="J4u-sR-BEq" firstAttribute="top" secondItem="3L3-7K-nSe" secondAttribute="bottom" constant="-247" id="lAk-fK-8o4"/>
                             <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="WYk-4F-dBh" secondAttribute="bottom" id="oPk-AW-M5M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dUt-3i-SQM" secondAttribute="trailing" constant="-5" id="qeg-U7-yvI"/>
                             <constraint firstItem="WYk-4F-dBh" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-14" id="xbs-nI-JR4"/>

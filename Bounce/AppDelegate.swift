@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Fabric.with([Twitter(), Crashlytics()])
+        self.customizeNavBar()
         
         // Override point for customization after application launch.
         return true
@@ -110,6 +111,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+    
+    func customizeNavBar () {
+        var color: UIColor = UIColor(red: CGFloat(0.369), green: CGFloat(0.773), blue: CGFloat(0.757), alpha: CGFloat(1))
+        UINavigationBar.appearance().barTintColor = color
     }
 
 }

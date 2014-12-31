@@ -367,7 +367,7 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-YA-UbV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Sign Up" id="vya-D0-Qkb"/>
+                                    <navigationItem title="Create an Account" id="vya-D0-Qkb"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -952,8 +952,8 @@
         <image name="launch" width="321" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="INS-bW-mhm"/>
         <segue reference="EyZ-CU-MYa"/>
-        <segue reference="WSv-Gf-VFj"/>
+        <segue reference="INS-bW-mhm"/>
+        <segue reference="BKp-Tu-Pj3"/>
     </inferredMetricsTieBreakers>
 </document>

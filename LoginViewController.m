@@ -71,13 +71,13 @@
     [self.recoverPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
 
     // Username Text Field
-    self.Username.textFieldColor = [UIColor cloudsColor];
+    self.Username.textFieldColor = [UIColor whiteColor];
     self.Username.borderColor = [UIColor turquoiseColor];
     self.Username.borderWidth = 3.0f;
     self.Username.cornerRadius = 6.0f;
     
     // Password Text Field
-    self.Password.textFieldColor = [UIColor cloudsColor];
+    self.Password.textFieldColor = [UIColor whiteColor];
     self.Password.borderColor = [UIColor turquoiseColor];
     self.Password.borderWidth = 3.0f;
     self.Password.cornerRadius = 6.0f;

@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="157" y="1132"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Pyl-QO-2CA">
             <objects>
-                <viewController id="xh1-g5-35K" sceneMemberID="viewController">
+                <viewController id="xh1-g5-35K" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="juj-IP-8jP"/>
                         <viewControllerLayoutGuide type="bottom" id="Rjy-A6-hMP"/>
@@ -310,31 +310,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bounce" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDq-q7-o2D">
-                                <rect key="frame" x="279" y="193" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWL-04-16Y">
-                                <rect key="frame" x="252" y="267" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-D5-cea">
-                                <rect key="frame" x="252" y="318" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfr-mD-fad">
-                                <rect key="frame" x="0.0" y="433" width="600" height="68"/>
-                                <state key="normal" title="SIgn Up">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RN7-Xl-XWb" kind="show" identifier="SignupToDigits" id="hV8-Lp-MkO"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-cF-pXI" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfr-mD-fad" customClass="FUIButton">
+                                        <rect key="frame" x="128" y="266" width="330" height="68"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RN7-Xl-XWb" kind="show" identifier="SignupToDigits" id="hV8-Lp-MkO"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-D5-cea" customClass="FUITextField">
+                                        <rect key="frame" x="118" y="195" width="295" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-YA-sUt" customClass="FUITextField">
+                                        <rect key="frame" x="118" y="70" width="305" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWL-04-16Y" customClass="FUITextField">
+                                        <rect key="frame" x="118" y="127" width="287" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="287" id="I2t-OH-PGM"/>
+                                            <constraint firstAttribute="height" constant="60" id="K0f-f3-LO4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Fwf-YA-sUt" secondAttribute="trailing" constant="16" id="9J9-M0-IOU"/>
+                                    <constraint firstItem="FWL-04-16Y" firstAttribute="width" secondItem="Db1-D5-cea" secondAttribute="width" id="LEU-ay-L61"/>
+                                    <constraint firstItem="cfr-mD-fad" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="16" id="VhZ-ra-qwg"/>
+                                    <constraint firstItem="FWL-04-16Y" firstAttribute="height" secondItem="Db1-D5-cea" secondAttribute="height" id="aNH-FK-qXw"/>
+                                    <constraint firstAttribute="centerY" secondItem="cfr-mD-fad" secondAttribute="centerY" id="cbq-BB-j1f"/>
+                                    <constraint firstItem="Db1-D5-cea" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="16" id="fCC-l2-ubH"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfr-mD-fad" secondAttribute="trailing" constant="16" id="faC-dP-aYt"/>
+                                    <constraint firstItem="FWL-04-16Y" firstAttribute="top" secondItem="Fwf-YA-sUt" secondAttribute="bottom" constant="8" id="h3q-uJ-ytq"/>
+                                    <constraint firstItem="FWL-04-16Y" firstAttribute="width" secondItem="Fwf-YA-sUt" secondAttribute="width" id="iEt-yP-9TB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Db1-D5-cea" secondAttribute="trailing" constant="16" id="jDP-Pj-eZn"/>
+                                    <constraint firstAttribute="bottom" secondItem="cfr-mD-fad" secondAttribute="bottom" constant="4" id="mLb-QU-miu"/>
+                                    <constraint firstItem="Fwf-YA-sUt" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="16" id="mt2-fN-xeS"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cfr-mD-fad" secondAttribute="bottom" constant="4" id="oYK-t7-7B2"/>
+                                    <constraint firstAttribute="trailing" secondItem="FWL-04-16Y" secondAttribute="trailing" constant="16" id="okV-KX-r2W"/>
+                                    <constraint firstItem="cfr-mD-fad" firstAttribute="top" secondItem="Db1-D5-cea" secondAttribute="bottom" constant="-6" id="tzF-sA-ue0"/>
+                                    <constraint firstItem="Db1-D5-cea" firstAttribute="top" secondItem="FWL-04-16Y" secondAttribute="bottom" constant="8" id="uvc-SI-LsD"/>
+                                    <constraint firstItem="FWL-04-16Y" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="16" id="wE4-1w-LIb"/>
+                                    <constraint firstItem="FWL-04-16Y" firstAttribute="height" secondItem="Fwf-YA-sUt" secondAttribute="height" id="y4u-0c-2t3"/>
+                                    <constraint firstItem="Fwf-YA-sUt" firstAttribute="top" secondItem="4cR-cF-pXI" secondAttribute="top" constant="70" id="z1Z-uk-mk4"/>
+                                </constraints>
+                            </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-YA-UbV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
@@ -344,6 +373,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Name" destination="Fwf-YA-sUt" id="AIe-Xa-NKN"/>
+                        <outlet property="NextButton" destination="cfr-mD-fad" id="vXY-Rs-3jm"/>
+                        <outlet property="Password" destination="Db1-D5-cea" id="8vL-is-P0E"/>
+                        <outlet property="Username" destination="FWL-04-16Y" id="F8g-sJ-swP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oG-74-LPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

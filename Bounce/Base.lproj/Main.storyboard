@@ -218,8 +218,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-Ud-TIo" customClass="FUITextField">
+                                        <rect key="frame" x="50" y="112" width="444" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Ajs-1E-Bbb"/>
+                                            <constraint firstAttribute="width" constant="300" id="cEO-bc-7Vq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-HI-2HU" customClass="FUIButton">
-                                        <rect key="frame" x="195" y="227" width="214" height="91"/>
+                                        <rect key="frame" x="195" y="227" width="215" height="91"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="214" id="71r-aH-hTi"/>
                                             <constraint firstAttribute="height" constant="91" id="far-LL-ahf"/>
@@ -232,26 +241,16 @@
                                         <rect key="frame" x="210" y="387" width="189" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="CCh-Kq-w9W"/>
-                                            <constraint firstAttribute="width" constant="189" id="wll-Rf-m5W"/>
+                                            <constraint firstAttribute="width" constant="200" id="wll-Rf-m5W"/>
                                         </constraints>
                                         <state key="normal" title="Recover Password">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-Ud-TIo" customClass="FUITextField">
-                                        <rect key="frame" x="50" y="112" width="444" height="76"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="Ajs-1E-Bbb"/>
-                                            <constraint firstAttribute="width" constant="300" id="cEO-bc-7Vq"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7EI-0V-eez" firstAttribute="height" secondItem="BzA-Ud-TIo" secondAttribute="height" id="4OL-Gz-f7c"/>
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="width" secondItem="7EI-0V-eez" secondAttribute="width" id="5om-Ah-W0t"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ygp-sA-HQe" secondAttribute="bottom" constant="10" id="NL7-s7-Zgg"/>
                                     <constraint firstAttribute="bottom" secondItem="iJE-HI-2HU" secondAttribute="bottom" priority="1" constant="4" id="P8o-rf-NOF"/>
                                     <constraint firstItem="7EI-0V-eez" firstAttribute="top" secondItem="jOr-yv-z3u" secondAttribute="top" constant="40" id="chX-MP-4qK"/>
                                     <constraint firstAttribute="centerX" secondItem="iJE-HI-2HU" secondAttribute="centerX" constant="0.5" id="f4D-y7-gya"/>

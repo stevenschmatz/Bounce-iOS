@@ -48,8 +48,11 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     
+    // background
     self.title = @"Log In";
     self.view.backgroundColor = [UIColor cloudsColor];
+    
+    // Login Button
     self.LoginButton.buttonColor = [UIColor turquoiseColor];
     self.LoginButton.shadowColor = [UIColor greenSeaColor];
     self.LoginButton.shadowHeight = 3.0f;
@@ -57,6 +60,27 @@
     self.LoginButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [self.LoginButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [self.LoginButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    
+    // Recover Password Button
+    self.recoverPasswordButton.buttonColor = [UIColor yellowColor];
+    self.recoverPasswordButton.shadowColor = [UIColor orangeColor];
+    self.recoverPasswordButton.shadowHeight = 3.0f;
+    self.recoverPasswordButton.cornerRadius = 6.0f;
+    self.recoverPasswordButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.recoverPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.recoverPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+
+    // Username Text Field
+    self.Username.textFieldColor = [UIColor cloudsColor];
+    self.Username.borderColor = [UIColor turquoiseColor];
+    self.Username.borderWidth = 3.0f;
+    self.Username.cornerRadius = 6.0f;
+    
+    // Password Text Field
+    self.Password.textFieldColor = [UIColor cloudsColor];
+    self.Password.borderColor = [UIColor turquoiseColor];
+    self.Password.borderWidth = 3.0f;
+    self.Password.cornerRadius = 6.0f;
     
     
     

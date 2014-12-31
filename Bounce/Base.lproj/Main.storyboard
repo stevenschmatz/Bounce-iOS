@@ -227,24 +227,24 @@
                                 </variation>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-HI-2HU" customClass="FUIButton">
-                                <rect key="frame" x="195" y="323" width="214" height="45"/>
+                                <rect key="frame" x="193" y="327" width="214" height="91"/>
                                 <state key="normal" title="LOG IN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-sA-HQe" customClass="FUIButton">
-                                <rect key="frame" x="200" y="385" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="206" y="444" width="189" height="68"/>
+                                <state key="normal" title="Recover Password">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-Ud-TIo" customClass="FUITextField">
-                                <rect key="frame" x="154" y="259" width="97" height="30"/>
+                                <rect key="frame" x="252" y="266" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-0V-eez" customClass="FUITextField">
-                                <rect key="frame" x="165" y="146" width="97" height="30"/>
+                                <rect key="frame" x="252" y="182" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>

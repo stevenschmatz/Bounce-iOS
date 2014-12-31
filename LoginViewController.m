@@ -49,14 +49,14 @@
     }
     
     self.title = @"Log In";
-    self.view.backgroundColor = [UIColor emerlandColor];
-    NSDictionary *attrs = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-    [[UIBarItem appearance] setTitleTextAttributes:attrs
-                                          forState:UIControlStateNormal];
-    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
-                                  highlightedColor:[UIColor belizeHoleColor]
-                                      cornerRadius:3
-                                   whenContainedIn:[UINavigationBar class], nil];
+    self.view.backgroundColor = [UIColor cloudsColor];
+    self.LoginButton.buttonColor = [UIColor turquoiseColor];
+    self.LoginButton.shadowColor = [UIColor greenSeaColor];
+    self.LoginButton.shadowHeight = 3.0f;
+    self.LoginButton.cornerRadius = 6.0f;
+    self.LoginButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    [self.LoginButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
+    [self.LoginButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
     
     
     

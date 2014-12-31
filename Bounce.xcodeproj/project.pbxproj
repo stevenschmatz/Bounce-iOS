@@ -31,7 +31,6 @@
 		0071B2891A53AAEB00057FBB /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071B2751A53AAEB00057FBB /* UITableViewCell+FlatUI.m */; };
 		0071B28A1A53AAEB00057FBB /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071B2771A53AAEB00057FBB /* UIToolbar+FlatUI.m */; };
 		0071B2911A53AC4800057FBB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071B28F1A53AC4800057FBB /* LoginViewController.m */; };
-		0071B2921A53AC4800057FBB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0071B2901A53AC4800057FBB /* LoginViewController.xib */; };
 		00A4DD4C1A5333BB003D96CA /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A4DD4B1A5333BB003D96CA /* TPKeyboardAvoidingScrollView.m */; };
 		00A4DD4F1A5333F3003D96CA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A4DD4E1A5333F3003D96CA /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
@@ -103,7 +102,6 @@
 		0071B2771A53AAEB00057FBB /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
 		0071B28E1A53AC4800057FBB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0071B28F1A53AC4800057FBB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		0071B2901A53AC4800057FBB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		00A4DD491A5333BA003D96CA /* Bounce-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bounce-Bridging-Header.h"; sourceTree = "<group>"; };
 		00A4DD4A1A5333BB003D96CA /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		00A4DD4B1A5333BB003D96CA /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
@@ -204,9 +202,9 @@
 		288547A41A4896E100FAC16F = {
 			isa = PBXGroup;
 			children = (
+				288547B91A4896E100FAC16F /* Main.storyboard */,
 				0071B28E1A53AC4800057FBB /* LoginViewController.h */,
 				0071B28F1A53AC4800057FBB /* LoginViewController.m */,
-				0071B2901A53AC4800057FBB /* LoginViewController.xib */,
 				28008EE31A48A1FA0014929D /* Crashlytics.framework */,
 				28008EDB1A4897EA0014929D /* TwitterKit.framework */,
 				28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */,
@@ -234,7 +232,6 @@
 				00A4DD4B1A5333BB003D96CA /* TPKeyboardAvoidingScrollView.m */,
 				00A4DD4D1A5333F3003D96CA /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				00A4DD4E1A5333F3003D96CA /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				288547B91A4896E100FAC16F /* Main.storyboard */,
 				0071B24D1A53A47E00057FBB /* trialImage.png */,
 				00030C881A53820F00152268 /* AtrialBackground@3x-01.png */,
 				288547BC1A4896E100FAC16F /* Images.xcassets */,
@@ -364,7 +361,6 @@
 				288547C01A4896E100FAC16F /* LaunchScreen.xib in Resources */,
 				288547BD1A4896E100FAC16F /* Images.xcassets in Resources */,
 				003D439B1A537B28001C1255 /* Atrial@1x-01.png in Resources */,
-				0071B2921A53AC4800057FBB /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +447,7 @@
 				288547BA1A4896E100FAC16F /* Base */,
 			);
 			name = Main.storyboard;
+			path = Bounce;
 			sourceTree = "<group>";
 		};
 		288547BE1A4896E100FAC16F /* LaunchScreen.xib */ = {

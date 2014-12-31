@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FUIAlertView.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UIPopoverControllerDelegate, UIActionSheetDelegate, FUIAlertViewDelegate>
 
 @end

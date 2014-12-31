@@ -30,14 +30,10 @@
 @interface LoginViewController () {
     UIPopoverController *_popoverController;
 }
-@property (weak, nonatomic) IBOutlet FUIButton *alertViewButton;
-@property (weak, nonatomic) IBOutlet FUIButton *popoverButton;
-@property (weak, nonatomic) IBOutlet UISlider *slider;
-@property (weak, nonatomic) IBOutlet UIStepper *stepper;
-@property (weak, nonatomic) IBOutlet FUISwitch *flatSwitch;
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels;
-@property (weak, nonatomic) IBOutlet UIProgressView *flatProgress;
-@property (weak, nonatomic) IBOutlet FUISegmentedControl *flatSegmentedControl;
+@property (weak, nonatomic) IBOutlet FUITextField *Username;
+@property (weak, nonatomic) IBOutlet FUITextField *Password;
+@property (weak, nonatomic) IBOutlet FUIButton *LoginButton;
+@property (weak, nonatomic) IBOutlet FUIButton *recoverPasswordButton;
 
 @end
 
@@ -53,7 +49,7 @@
     }
     
     self.title = @"Log In";
-    self.view.backgroundColor = [UIColor cloudsColor];
+    self.view.backgroundColor = [UIColor emerlandColor];
     NSDictionary *attrs = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     [[UIBarItem appearance] setTitleTextAttributes:attrs
                                           forState:UIControlStateNormal];

@@ -57,7 +57,7 @@
     self.LoginButton.shadowColor = [UIColor darkerSeaGreenColor];
     self.LoginButton.shadowHeight = 3.0f;
     self.LoginButton.cornerRadius = 6.0f;
-    self.LoginButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    self.LoginButton.titleLabel.font = [UIFont boldFlatFontOfSize:24];
     [self.LoginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.LoginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     
@@ -66,7 +66,7 @@
     self.recoverPasswordButton.shadowColor = [UIColor darkerSeaGreenColor];
     self.recoverPasswordButton.shadowHeight = 3.0f;
     self.recoverPasswordButton.cornerRadius = 6.0f;
-    self.recoverPasswordButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
+    self.recoverPasswordButton.titleLabel.font = [UIFont boldFlatFontOfSize:20];
     [self.recoverPasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.recoverPasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
 

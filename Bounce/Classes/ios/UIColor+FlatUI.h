@@ -32,6 +32,16 @@
 + (UIColor *) concreteColor;
 + (UIColor *) asbestosColor;
 
+// bounce color pallete
++ (UIColor *) blackestColor;
++ (UIColor *) blackerColor;
++ (UIColor *) grayishColor;
++ (UIColor *) lighterGrayColor;
++ (UIColor *) brownishColor;
++ (UIColor *) seaGreenColor;
++ (UIColor *) darkerSeaGreenColor;
+
+
 + (UIColor *) blendedColorWithForegroundColor:(UIColor *)foregroundColor
                               backgroundColor:(UIColor *)backgroundColor
                                  percentBlend:(CGFloat) percentBlend;

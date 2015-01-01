@@ -50,34 +50,34 @@
     
     // background
     self.title = @"Log In";
-    self.view.backgroundColor = [UIColor cloudsColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     // Login Button
-    self.LoginButton.buttonColor = [UIColor turquoiseColor];
-    self.LoginButton.shadowColor = [UIColor greenSeaColor];
+    self.LoginButton.buttonColor = [UIColor seaGreenColor];
+    self.LoginButton.shadowColor = [UIColor darkerSeaGreenColor];
     self.LoginButton.shadowHeight = 3.0f;
     self.LoginButton.cornerRadius = 6.0f;
     self.LoginButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    [self.LoginButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
-    [self.LoginButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    [self.LoginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.LoginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     
     // Recover Password Button
-    self.recoverPasswordButton.buttonColor = [UIColor yellowColor];
-    self.recoverPasswordButton.shadowColor = [UIColor orangeColor];
+    self.recoverPasswordButton.buttonColor = [UIColor seaGreenColor];
+    self.recoverPasswordButton.shadowColor = [UIColor darkerSeaGreenColor];
     self.recoverPasswordButton.shadowHeight = 3.0f;
     self.recoverPasswordButton.cornerRadius = 6.0f;
     self.recoverPasswordButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    [self.recoverPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [self.recoverPasswordButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+    [self.recoverPasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.recoverPasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
 
     // Username Text Field
-    self.Username.textFieldColor = [UIColor whiteColor];
+    self.Username.textFieldColor = [UIColor cloudsColor];
     self.Username.borderColor = [UIColor turquoiseColor];
     self.Username.borderWidth = 3.0f;
     self.Username.cornerRadius = 6.0f;
     
     // Password Text Field
-    self.Password.textFieldColor = [UIColor whiteColor];
+    self.Password.textFieldColor = [UIColor cloudsColor];
     self.Password.borderColor = [UIColor turquoiseColor];
     self.Password.borderWidth = 3.0f;
     self.Password.cornerRadius = 6.0f;

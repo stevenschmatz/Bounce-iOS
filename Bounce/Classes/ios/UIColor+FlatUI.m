@@ -254,6 +254,58 @@
     return asbestos;
 }
 
++ (UIColor *) blackestColor {
+    static UIColor *blackest = nil;
+    static dispatch_once_t blackestToken;
+    
+    dispatch_once(&blackestToken, ^{ blackest = [UIColor colorFromHexCode:(@"29292D")];});
+    return blackest;
+}
+
++ (UIColor *) blackerColor {
+    static UIColor *blacker = nil;
+    static dispatch_once_t blackerToken;
+    
+    dispatch_once(&blackerToken, ^{ blacker = [UIColor colorFromHexCode:(@"3D4741")];});
+    return blacker;
+}
++ (UIColor *) grayishColor {
+    static UIColor *grayish = nil;
+    static dispatch_once_t grayishToken;
+    
+    dispatch_once(&grayishToken, ^{ grayish = [UIColor colorFromHexCode:(@"565957")];});
+    return grayish;
+}
+
++ (UIColor *) lighterGrayColor {
+    static UIColor *lighterGray = nil;
+    static dispatch_once_t lighterGrayToken;
+    
+    dispatch_once(&lighterGrayToken, ^{ lighterGray = [UIColor colorFromHexCode:(@"B6C9B2")];});
+    return lighterGray;
+}
++ (UIColor *) brownishColor {
+    static UIColor *brownish = nil;
+    static dispatch_once_t brownishToken;
+    
+    dispatch_once(&brownishToken, ^{ brownish = [UIColor colorFromHexCode:(@"96876A")];});
+    return brownish;
+}
++ (UIColor *) seaGreenColor {
+    static UIColor *seaGreen = nil;
+    static dispatch_once_t seaGreenToken;
+    
+    dispatch_once(&seaGreenToken, ^{ seaGreen = [UIColor colorFromHexCode:(@"68E4D2")];});
+    return seaGreen;
+}
++ (UIColor *) darkerSeaGreenColor {
+    static UIColor *darkerSeaGreen = nil;
+    static dispatch_once_t DarkerSeaGreenToken;
+    
+    dispatch_once(&DarkerSeaGreenToken, ^{ darkerSeaGreen = [UIColor colorFromHexCode:(@"5BBFB8")];});
+    return darkerSeaGreen;
+}
+
 + (UIColor *) blendedColorWithForegroundColor:(UIColor *)foregroundColor
                               backgroundColor:(UIColor *)backgroundColor
                                  percentBlend:(CGFloat) percentBlend {

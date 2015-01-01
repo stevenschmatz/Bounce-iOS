@@ -47,33 +47,33 @@
     
     // background
     self.title = @"Create Account";
-    self.view.backgroundColor = [UIColor cloudsColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     // Next Button
-    self.NextButton.buttonColor = [UIColor turquoiseColor];
-    self.NextButton.shadowColor = [UIColor greenSeaColor];
+    self.NextButton.buttonColor = [UIColor seaGreenColor];
+    self.NextButton.shadowColor = [UIColor darkerSeaGreenColor];
     self.NextButton.shadowHeight = 3.0f;
     self.NextButton.cornerRadius = 6.0f;
     self.NextButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    [self.NextButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
-    [self.NextButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    [self.NextButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.NextButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     
     
     // Username Text Field
-    self.Username.textFieldColor = [UIColor whiteColor];
+    self.Username.textFieldColor = [UIColor cloudsColor];
     self.Username.borderColor = [UIColor turquoiseColor];
     self.Username.borderWidth = 3.0f;
     self.Username.cornerRadius = 6.0f;
     
     // Password Text Field
-    self.Password.textFieldColor = [UIColor whiteColor];
-    self.Password.borderColor = [UIColor turquoiseColor];
+    self.Password.textFieldColor = [UIColor cloudsColor];
+    self.Password.borderColor = [UIColor seaGreenColor];
     self.Password.borderWidth = 3.0f;
     self.Password.cornerRadius = 6.0f;
     
     // Name Text Field
-    self.Name.textFieldColor = [UIColor whiteColor];
-    self.Name.borderColor = [UIColor turquoiseColor];
+    self.Name.textFieldColor = [UIColor cloudsColor];
+    self.Name.borderColor = [UIColor seaGreenColor];
     self.Name.borderWidth = 3.0f;
     self.Name.cornerRadius = 6.0f;
     

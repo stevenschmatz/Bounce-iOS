@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func customizeNavBar () {
-        var color: UIColor = UIColor(red: CGFloat(0.369), green: CGFloat(0.773), blue: CGFloat(0.757), alpha: CGFloat(1))
+        var color: UIColor = UIColor.seaGreenColor()
         UINavigationBar.appearance().barTintColor = color
     }
 

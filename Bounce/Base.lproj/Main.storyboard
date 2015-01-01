@@ -303,15 +303,16 @@
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="width" secondItem="7EI-0V-eez" secondAttribute="width" id="5om-Ah-W0t"/>
                                     <constraint firstAttribute="trailing" secondItem="BzA-Ud-TIo" secondAttribute="trailing" constant="-10" id="7BI-TS-CN8"/>
                                     <constraint firstAttribute="centerX" secondItem="uTJ-hb-RGF" secondAttribute="centerX" id="E7f-iu-OuX"/>
-                                    <constraint firstAttribute="centerY" secondItem="iJE-HI-2HU" secondAttribute="centerY" id="GNV-aI-bfw"/>
                                     <constraint firstAttribute="height" constant="545" id="OQ6-5A-neU"/>
                                     <constraint firstAttribute="bottom" secondItem="iJE-HI-2HU" secondAttribute="bottom" priority="1" constant="4" id="P8o-rf-NOF"/>
                                     <constraint firstAttribute="width" constant="599" id="U45-M8-2Fy"/>
                                     <constraint firstItem="iJE-HI-2HU" firstAttribute="top" secondItem="BzA-Ud-TIo" secondAttribute="bottom" constant="30" id="VUH-b9-apM"/>
+                                    <constraint firstItem="iJE-HI-2HU" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="50" id="Xdj-xM-b0P"/>
                                     <constraint firstItem="7EI-0V-eez" firstAttribute="top" secondItem="jOr-yv-z3u" secondAttribute="top" constant="50" id="chX-MP-4qK"/>
                                     <constraint firstAttribute="centerX" secondItem="iJE-HI-2HU" secondAttribute="centerX" id="f4D-y7-gya"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJE-HI-2HU" secondAttribute="trailing" constant="50" id="g4f-Ku-4YM"/>
                                     <constraint firstItem="7EI-0V-eez" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="10" id="hOy-8q-bGa"/>
-                                    <constraint firstItem="uTJ-hb-RGF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iJE-HI-2HU" secondAttribute="bottom" constant="157" id="iTW-6f-cGn"/>
+                                    <constraint firstItem="uTJ-hb-RGF" firstAttribute="centerY" secondItem="iJE-HI-2HU" secondAttribute="centerY" constant="157" id="iTW-6f-cGn"/>
                                     <constraint firstAttribute="centerX" secondItem="BzA-Ud-TIo" secondAttribute="centerX" id="pCe-kK-ZW0"/>
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="10" id="ryS-hk-s2q"/>
                                     <constraint firstAttribute="centerX" secondItem="7EI-0V-eez" secondAttribute="centerX" constant="-1.5" id="ukT-y4-awn"/>
@@ -322,6 +323,7 @@
                                         <exclude reference="OQ6-5A-neU"/>
                                         <exclude reference="U45-M8-2Fy"/>
                                         <exclude reference="5om-Ah-W0t"/>
+                                        <exclude reference="f4D-y7-gya"/>
                                     </mask>
                                 </variation>
                             </scrollView>

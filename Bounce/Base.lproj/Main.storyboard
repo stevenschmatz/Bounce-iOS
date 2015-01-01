@@ -239,24 +239,24 @@
                                     <rect key="frame" x="0.0" y="-81" width="600" height="55"/>
                                 </variation>
                             </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-yv-z3u" customClass="TPKeyboardAvoidingScrollView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-yv-z3u" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="1" y="55" width="599" height="545"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-0V-eez" customClass="FUITextField">
-                                        <rect key="frame" x="50" y="45" width="200" height="59"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-Ud-TIo" customClass="FUITextField">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-Ud-TIo" customClass="FUITextField">
                                         <rect key="frame" x="50" y="112" width="200" height="76"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Ajs-1E-Bbb"/>
-                                            <constraint firstAttribute="width" constant="300" id="cEO-bc-7Vq"/>
+                                            <constraint firstAttribute="width" constant="200" id="cEO-bc-7Vq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cEO-bc-7Vq"/>
+                                            </mask>
+                                        </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-sA-HQe" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-sA-HQe" customClass="FUIButton">
                                         <rect key="frame" x="210" y="387" width="189" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="CCh-Kq-w9W"/>
@@ -268,7 +268,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-HI-2HU" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-HI-2HU" customClass="FUIButton">
                                         <rect key="frame" x="195" y="227" width="215" height="92"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="71r-aH-hTi"/>
@@ -279,13 +279,18 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-0V-eez" customClass="FUITextField">
+                                        <rect key="frame" x="50" y="45" width="200" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="top" secondItem="7EI-0V-eez" secondAttribute="bottom" constant="8" id="2X5-wN-1iN"/>
                                     <constraint firstItem="7EI-0V-eez" firstAttribute="height" secondItem="BzA-Ud-TIo" secondAttribute="height" id="4OL-Gz-f7c"/>
-                                    <constraint firstAttribute="trailing" secondItem="7EI-0V-eez" secondAttribute="trailing" constant="25" id="4mz-Rt-0X6"/>
+                                    <constraint firstAttribute="trailing" secondItem="7EI-0V-eez" secondAttribute="trailing" constant="-25" id="4mz-Rt-0X6"/>
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="width" secondItem="7EI-0V-eez" secondAttribute="width" id="5om-Ah-W0t"/>
-                                    <constraint firstAttribute="trailing" secondItem="BzA-Ud-TIo" secondAttribute="trailing" constant="25" id="7BI-TS-CN8"/>
+                                    <constraint firstAttribute="trailing" secondItem="BzA-Ud-TIo" secondAttribute="trailing" constant="-25" id="7BI-TS-CN8"/>
                                     <constraint firstAttribute="centerY" secondItem="iJE-HI-2HU" secondAttribute="centerY" id="GNV-aI-bfw"/>
                                     <constraint firstAttribute="bottom" secondItem="Ygp-sA-HQe" secondAttribute="bottom" constant="50" id="JBf-lo-f6R"/>
                                     <constraint firstAttribute="height" constant="545" id="OQ6-5A-neU"/>
@@ -300,13 +305,24 @@
                                     <constraint firstAttribute="centerX" secondItem="7EI-0V-eez" secondAttribute="centerX" constant="-1.5" id="ukT-y4-awn"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iJE-HI-2HU" secondAttribute="bottom" constant="4" id="ygX-Se-Owu"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OQ6-5A-neU"/>
+                                        <exclude reference="U45-M8-2Fy"/>
+                                        <exclude reference="5om-Ah-W0t"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.84524556614563551" green="1" blue="0.92183884811683214" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cAD-Tb-bFU" firstAttribute="top" secondItem="hef-2z-qJV" secondAttribute="topMargin" id="9to-5n-JbI"/>
+                            <constraint firstItem="jOr-yv-z3u" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-15" id="FVv-Gy-hwx"/>
+                            <constraint firstItem="2Hp-HY-wzY" firstAttribute="top" secondItem="jOr-yv-z3u" secondAttribute="bottom" id="Sq2-vR-cNG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cAD-Tb-bFU" secondAttribute="trailing" constant="-16" id="fh4-nl-kS6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jOr-yv-z3u" secondAttribute="trailing" constant="-16" id="m71-pT-p4h"/>
                             <constraint firstItem="cAD-Tb-bFU" firstAttribute="leading" secondItem="hef-2z-qJV" secondAttribute="leadingMargin" constant="-16" id="nfu-bF-WMJ"/>
+                            <constraint firstItem="jOr-yv-z3u" firstAttribute="top" secondItem="cAD-Tb-bFU" secondAttribute="bottom" id="osw-Xs-VyK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="nRM-0H-gMb"/>

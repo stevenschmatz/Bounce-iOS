@@ -218,16 +218,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="227-kU-152"/>
+                                    <constraint firstAttribute="width" constant="600" id="Fqg-Pp-vVu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="OYC-aQ-Hqh"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="SIGN IN" id="K4G-pV-NGd">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8AY-nQ-JN0"/>
+                                    </navigationItem>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Fqg-Pp-vVu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-81" width="600" height="55"/>
+                                </variation>
+                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-yv-z3u" customClass="TPKeyboardAvoidingScrollView">
-                                <rect key="frame" x="-5" y="55" width="605" height="545"/>
+                                <rect key="frame" x="1" y="55" width="599" height="545"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-0V-eez" customClass="FUITextField">
-                                        <rect key="frame" x="50" y="45" width="508" height="59"/>
+                                        <rect key="frame" x="50" y="45" width="200" height="59"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-Ud-TIo" customClass="FUITextField">
-                                        <rect key="frame" x="50" y="112" width="444" height="76"/>
+                                        <rect key="frame" x="50" y="112" width="200" height="76"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Ajs-1E-Bbb"/>
                                             <constraint firstAttribute="width" constant="300" id="cEO-bc-7Vq"/>
@@ -260,37 +281,26 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="BzA-Ud-TIo" firstAttribute="top" secondItem="7EI-0V-eez" secondAttribute="bottom" constant="8" id="2X5-wN-1iN"/>
                                     <constraint firstItem="7EI-0V-eez" firstAttribute="height" secondItem="BzA-Ud-TIo" secondAttribute="height" id="4OL-Gz-f7c"/>
+                                    <constraint firstAttribute="trailing" secondItem="7EI-0V-eez" secondAttribute="trailing" constant="25" id="4mz-Rt-0X6"/>
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="width" secondItem="7EI-0V-eez" secondAttribute="width" id="5om-Ah-W0t"/>
+                                    <constraint firstAttribute="trailing" secondItem="BzA-Ud-TIo" secondAttribute="trailing" constant="25" id="7BI-TS-CN8"/>
                                     <constraint firstAttribute="centerY" secondItem="iJE-HI-2HU" secondAttribute="centerY" id="GNV-aI-bfw"/>
                                     <constraint firstAttribute="bottom" secondItem="Ygp-sA-HQe" secondAttribute="bottom" constant="50" id="JBf-lo-f6R"/>
+                                    <constraint firstAttribute="height" constant="545" id="OQ6-5A-neU"/>
                                     <constraint firstAttribute="bottom" secondItem="iJE-HI-2HU" secondAttribute="bottom" priority="1" constant="4" id="P8o-rf-NOF"/>
-                                    <constraint firstItem="7EI-0V-eez" firstAttribute="top" secondItem="jOr-yv-z3u" secondAttribute="top" constant="40" id="chX-MP-4qK"/>
+                                    <constraint firstAttribute="width" constant="599" id="U45-M8-2Fy"/>
+                                    <constraint firstItem="7EI-0V-eez" firstAttribute="top" secondItem="jOr-yv-z3u" secondAttribute="top" constant="100" id="chX-MP-4qK"/>
                                     <constraint firstAttribute="centerX" secondItem="iJE-HI-2HU" secondAttribute="centerX" constant="0.5" id="f4D-y7-gya"/>
-                                    <constraint firstItem="7EI-0V-eez" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="16" id="hOy-8q-bGa"/>
+                                    <constraint firstItem="7EI-0V-eez" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="25" id="hOy-8q-bGa"/>
                                     <constraint firstAttribute="centerX" secondItem="BzA-Ud-TIo" secondAttribute="centerX" id="pCe-kK-ZW0"/>
                                     <constraint firstAttribute="centerX" secondItem="Ygp-sA-HQe" secondAttribute="centerX" constant="-2" id="rjd-9r-XHP"/>
-                                    <constraint firstItem="BzA-Ud-TIo" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="16" id="ryS-hk-s2q"/>
+                                    <constraint firstItem="BzA-Ud-TIo" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="25" id="ryS-hk-s2q"/>
                                     <constraint firstAttribute="centerX" secondItem="7EI-0V-eez" secondAttribute="centerX" constant="-1.5" id="ukT-y4-awn"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iJE-HI-2HU" secondAttribute="bottom" constant="4" id="ygX-Se-Owu"/>
                                 </constraints>
                             </scrollView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="227-kU-152"/>
-                                    <constraint firstAttribute="width" constant="600" id="Fqg-Pp-vVu"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="OYC-aQ-Hqh"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="SIGN IN" id="K4G-pV-NGd">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8AY-nQ-JN0"/>
-                                    </navigationItem>
-                                </items>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="-81" width="600" height="55"/>
-                                </variation>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.84524556614563551" green="1" blue="0.92183884811683214" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -331,7 +341,7 @@
                                         <state key="normal" title="Next">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="-135" y="266" width="330" height="68"/>
                                         </variation>
                                         <connections>
@@ -342,7 +352,7 @@
                                         <rect key="frame" x="118" y="195" width="295" height="77"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="-145" y="195" width="295" height="77"/>
                                         </variation>
                                     </textField>
@@ -354,11 +364,19 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="-145" y="127" width="287" height="60"/>
                                         </variation>
                                     </textField>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-YA-UbV">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-YA-sUt" customClass="FUITextField">
+                                        <rect key="frame" x="118" y="70" width="305" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="-150" y="65" width="305" height="49"/>
+                                        </variation>
+                                    </textField>
+                                    <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-YA-UbV">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <items>
                                             <navigationItem title="Create an Account" id="vya-D0-Qkb"/>
@@ -366,19 +384,16 @@
                                         <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="8" y="13" width="387" height="44"/>
                                         </variation>
-                                    </navigationBar>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-YA-sUt" customClass="FUITextField">
-                                        <rect key="frame" x="118" y="70" width="305" height="49"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
                                         <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="-150" y="65" width="305" height="49"/>
+                                            <rect key="frame" x="8" y="0.0" width="392" height="44"/>
                                         </variation>
-                                    </textField>
+                                    </navigationBar>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RRc-YA-UbV" secondAttribute="trailing" id="18g-5F-j3u"/>
                                     <constraint firstAttribute="trailing" secondItem="Fwf-YA-sUt" secondAttribute="trailing" constant="16" id="9J9-M0-IOU"/>
                                     <constraint firstAttribute="height" constant="592" id="BaG-AN-Mkw"/>
+                                    <constraint firstItem="RRc-YA-UbV" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" id="E82-Zz-2AS"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="width" secondItem="Db1-D5-cea" secondAttribute="width" id="LEU-ay-L61"/>
                                     <constraint firstItem="cfr-mD-fad" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="16" id="VhZ-ra-qwg"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="height" secondItem="Db1-D5-cea" secondAttribute="height" id="aNH-FK-qXw"/>
@@ -396,16 +411,17 @@
                                     <constraint firstItem="cfr-mD-fad" firstAttribute="top" secondItem="Db1-D5-cea" secondAttribute="bottom" constant="10" id="tzF-sA-ue0"/>
                                     <constraint firstItem="Db1-D5-cea" firstAttribute="top" secondItem="FWL-04-16Y" secondAttribute="bottom" constant="8" id="uvc-SI-LsD"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="16" id="wE4-1w-LIb"/>
+                                    <constraint firstItem="RRc-YA-UbV" firstAttribute="top" secondItem="4cR-cF-pXI" secondAttribute="top" id="x0Z-L8-Rhf"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="height" secondItem="Fwf-YA-sUt" secondAttribute="height" id="y4u-0c-2t3"/>
                                     <constraint firstItem="Fwf-YA-sUt" firstAttribute="top" secondItem="4cR-cF-pXI" secondAttribute="top" constant="70" id="z1Z-uk-mk4"/>
                                 </constraints>
                                 <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="RRc-YA-UbV"/>
-                                    </mask>
                                     <mask key="constraints">
                                         <exclude reference="BaG-AN-Mkw"/>
                                         <exclude reference="tc0-7f-jUd"/>
+                                        <exclude reference="18g-5F-j3u"/>
+                                        <exclude reference="E82-Zz-2AS"/>
+                                        <exclude reference="x0Z-L8-Rhf"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact">
@@ -413,16 +429,37 @@
                                         <include reference="RRc-YA-UbV"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="592"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="BaG-AN-Mkw"/>
                                         <include reference="tc0-7f-jUd"/>
+                                        <exclude reference="18g-5F-j3u"/>
+                                        <exclude reference="E82-Zz-2AS"/>
+                                        <exclude reference="x0Z-L8-Rhf"/>
                                     </mask>
                                 </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4cR-cF-pXI" secondAttribute="trailing" constant="-16" id="8NR-YX-sch"/>
+                            <constraint firstItem="4cR-cF-pXI" firstAttribute="top" secondItem="HMe-q4-Ddv" secondAttribute="topMargin" id="L1B-tC-LLf"/>
+                            <constraint firstItem="4cR-cF-pXI" firstAttribute="leading" secondItem="HMe-q4-Ddv" secondAttribute="leadingMargin" constant="-16" id="pTA-zc-O9Q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8NR-YX-sch"/>
+                                <exclude reference="L1B-tC-LLf"/>
+                                <exclude reference="pTA-zc-O9Q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="8NR-YX-sch"/>
+                                <include reference="L1B-tC-LLf"/>
+                                <include reference="pTA-zc-O9Q"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="Name" destination="Fwf-YA-sUt" id="AIe-Xa-NKN"/>

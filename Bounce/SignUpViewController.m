@@ -61,7 +61,7 @@
     
     // Username Text Field
     self.Username.textFieldColor = [UIColor cloudsColor];
-    self.Username.borderColor = [UIColor turquoiseColor];
+    self.Username.borderColor = [UIColor seaGreenColor];
     self.Username.borderWidth = 3.0f;
     self.Username.cornerRadius = 6.0f;
     

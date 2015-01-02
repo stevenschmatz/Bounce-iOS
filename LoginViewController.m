@@ -73,13 +73,13 @@
 
     // Username Text Field
     self.Username.textFieldColor = [UIColor cloudsColor];
-    self.Username.borderColor = [UIColor turquoiseColor];
+    self.Username.borderColor = [UIColor seaGreenColor];
     self.Username.borderWidth = 3.0f;
     self.Username.cornerRadius = 6.0f;
     
     // Password Text Field
     self.Password.textFieldColor = [UIColor cloudsColor];
-    self.Password.borderColor = [UIColor turquoiseColor];
+    self.Password.borderColor = [UIColor seaGreenColor];
     self.Password.borderWidth = 3.0f;
     self.Password.cornerRadius = 6.0f;
     

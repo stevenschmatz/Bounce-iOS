@@ -288,6 +288,9 @@
                                                 <exclude reference="71r-aH-hTi"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="ikc-7f-r4W" kind="presentation" id="Ofl-ge-zJA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-hb-RGF" customClass="FUIButton">
                                         <rect key="frame" x="161" y="451" width="277" height="71"/>
@@ -327,7 +330,7 @@
                                     <constraint firstItem="uTJ-hb-RGF" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="10" id="p1y-Vr-bsV"/>
                                     <constraint firstAttribute="centerX" secondItem="BzA-Ud-TIo" secondAttribute="centerX" id="pCe-kK-ZW0"/>
                                     <constraint firstItem="BzA-Ud-TIo" firstAttribute="leading" secondItem="jOr-yv-z3u" secondAttribute="leading" constant="10" id="ryS-hk-s2q"/>
-                                    <constraint firstAttribute="centerX" secondItem="7EI-0V-eez" secondAttribute="centerX" constant="-1.5" id="ukT-y4-awn"/>
+                                    <constraint firstAttribute="centerX" secondItem="7EI-0V-eez" secondAttribute="centerX" id="ukT-y4-awn"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iJE-HI-2HU" secondAttribute="bottom" constant="4" id="ygX-Se-Owu"/>
                                 </constraints>
                                 <variation key="default">
@@ -383,7 +386,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="2xG-Wi-ISW"/>
                                         </constraints>
-                                        <state key="normal" title="Next">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="NEXT">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
@@ -723,7 +727,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <items>
                                                 <navigationItem title="Chats" id="zQ1-BW-APG">
-                                                    <barButtonItem key="leftBarButtonItem" title="Groups" id="VMC-bu-bOG"/>
+                                                    <barButtonItem key="leftBarButtonItem" title="Groups" id="VMC-bu-bOG">
+                                                        <connections>
+                                                            <segue destination="tWP-bx-bUL" kind="presentation" id="S6u-ie-MuC"/>
+                                                        </connections>
+                                                    </barButtonItem>
                                                     <barButtonItem key="rightBarButtonItem" title="Compose" id="g7S-70-U2T">
                                                         <connections>
                                                             <segue destination="QX6-5P-phg" kind="show" identifier="ChatsToCompose" id="ayD-aO-abE"/>
@@ -745,7 +753,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOM-p4-DVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="177" y="2484"/>
+            <point key="canvasLocation" x="221" y="2508"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lcj-4C-Dra">
@@ -1085,8 +1093,9 @@
         <image name="launch" width="321" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EyZ-CU-MYa"/>
         <segue reference="INS-bW-mhm"/>
-        <segue reference="BKp-Tu-Pj3"/>
+        <segue reference="Ofl-ge-zJA"/>
+        <segue reference="ayD-aO-abE"/>
+        <segue reference="S6u-ie-MuC"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007151291A56FF93002163CA /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007151281A56FF93002163CA /* ChatTableViewController.m */; };
+		0071512D1A5724C4002163CA /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071512B1A5724C4002163CA /* ChatTableViewCell.m */; };
+		0071512E1A5724C4002163CA /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0071512C1A5724C4002163CA /* ChatTableViewCell.xib */; };
 		0071B2781A53AAEB00057FBB /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071B2531A53AAEB00057FBB /* FUIAlertView.m */; };
 		0071B2791A53AAEB00057FBB /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071B2551A53AAEB00057FBB /* FUIButton.m */; };
 		0071B27A1A53AAEB00057FBB /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071B2571A53AAEB00057FBB /* FUICellBackgroundView.m */; };
@@ -31,7 +34,6 @@
 		008A2CCE1A544C5B0011A1AF /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A2CCC1A544C5B0011A1AF /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		008A2CD11A544D170011A1AF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A2CD01A544D170011A1AF /* SignUpViewController.m */; };
 		008A2CD41A55D2720011A1AF /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A2CD31A55D2720011A1AF /* LaunchViewController.m */; };
-		00C418751A564A8400C82EA8 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C418741A564A8400C82EA8 /* ChatTableViewController.swift */; };
 		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
 		28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */; };
 		28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDD1A4897EA0014929D /* Fabric.framework */; };
@@ -56,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007151271A56FF93002163CA /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatTableViewController.h; path = ../ChatTableViewController.h; sourceTree = "<group>"; };
+		007151281A56FF93002163CA /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatTableViewController.m; path = ../ChatTableViewController.m; sourceTree = "<group>"; };
+		0071512A1A5724C4002163CA /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		0071512B1A5724C4002163CA /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		0071512C1A5724C4002163CA /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		0071B2511A53AAEB00057FBB /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
 		0071B2521A53AAEB00057FBB /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
 		0071B2531A53AAEB00057FBB /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
@@ -106,7 +113,6 @@
 		008A2CD21A55D2720011A1AF /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		008A2CD31A55D2720011A1AF /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		00A4DD491A5333BA003D96CA /* Bounce-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bounce-Bridging-Header.h"; sourceTree = "<group>"; };
-		00C418741A564A8400C82EA8 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		28008EDB1A4897EA0014929D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		28008EDD1A4897EA0014929D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -248,10 +254,14 @@
 				008A2CCF1A544D170011A1AF /* SignUpViewController.h */,
 				008A2CD01A544D170011A1AF /* SignUpViewController.m */,
 				288547B71A4896E100FAC16F /* DigitsViewController.swift */,
+				007151271A56FF93002163CA /* ChatTableViewController.h */,
+				007151281A56FF93002163CA /* ChatTableViewController.m */,
+				0071512A1A5724C4002163CA /* ChatTableViewCell.h */,
+				0071512B1A5724C4002163CA /* ChatTableViewCell.m */,
+				0071512C1A5724C4002163CA /* ChatTableViewCell.xib */,
 				288547B41A4896E100FAC16F /* Bounce.xcdatamodeld */,
 				288547B01A4896E100FAC16F /* Supporting Files */,
 				00A4DD491A5333BA003D96CA /* Bounce-Bridging-Header.h */,
-				00C418741A564A8400C82EA8 /* ChatTableViewController.swift */,
 			);
 			path = Bounce;
 			sourceTree = "<group>";
@@ -364,6 +374,7 @@
 			files = (
 				28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */,
 				288547BB1A4896E100FAC16F /* Main.storyboard in Resources */,
+				0071512E1A5724C4002163CA /* ChatTableViewCell.xib in Resources */,
 				288547C01A4896E100FAC16F /* LaunchScreen.xib in Resources */,
 				288547BD1A4896E100FAC16F /* Images.xcassets in Resources */,
 			);
@@ -404,6 +415,7 @@
 				008A2CD41A55D2720011A1AF /* LaunchViewController.m in Sources */,
 				0071B27A1A53AAEB00057FBB /* FUICellBackgroundView.m in Sources */,
 				288547B81A4896E100FAC16F /* DigitsViewController.swift in Sources */,
+				0071512D1A5724C4002163CA /* ChatTableViewCell.m in Sources */,
 				008A2CCE1A544C5B0011A1AF /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				0071B2911A53AC4800057FBB /* LoginViewController.m in Sources */,
 				0071B2841A53AAEB00057FBB /* UIPopoverController+FlatUI.m in Sources */,
@@ -418,6 +430,7 @@
 				0071B2881A53AAEB00057FBB /* UITabBar+FlatUI.m in Sources */,
 				0071B28A1A53AAEB00057FBB /* UIToolbar+FlatUI.m in Sources */,
 				0071B2781A53AAEB00057FBB /* FUIAlertView.m in Sources */,
+				007151291A56FF93002163CA /* ChatTableViewController.m in Sources */,
 				0071B2801A53AAEB00057FBB /* UIColor+FlatUI.m in Sources */,
 				288547B31A4896E100FAC16F /* AppDelegate.swift in Sources */,
 				0071B2821A53AAEB00057FBB /* UIImage+FlatUI.m in Sources */,
@@ -426,7 +439,6 @@
 				288547B61A4896E100FAC16F /* Bounce.xcdatamodeld in Sources */,
 				008A2CD11A544D170011A1AF /* SignUpViewController.m in Sources */,
 				0071B2811A53AAEB00057FBB /* UIFont+FlatUI.m in Sources */,
-				00C418751A564A8400C82EA8 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

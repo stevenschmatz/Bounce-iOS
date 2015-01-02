@@ -349,7 +349,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8AY-nQ-JN0">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" id="odR-uy-EdS"/>
+                                                <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="flipHorizontal" id="odR-uy-EdS"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -471,7 +471,7 @@
                                                 <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0dw-1Y-gJY">
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <connections>
-                                                        <segue destination="BYZ-38-t0r" kind="presentation" id="Vdd-ES-ANp"/>
+                                                        <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="Vdd-ES-ANp"/>
                                                     </connections>
                                                 </barButtonItem>
                                             </navigationItem>
@@ -489,8 +489,8 @@
                                     <constraint firstAttribute="centerY" secondItem="cfr-mD-fad" secondAttribute="centerY" id="cbq-BB-j1f"/>
                                     <constraint firstItem="Db1-D5-cea" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="10" id="fCC-l2-ubH"/>
                                     <constraint firstAttribute="trailing" secondItem="cfr-mD-fad" secondAttribute="trailing" constant="-10" id="faC-dP-aYt"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="ali-f0-IoR" secondAttribute="trailing" constant="-10" id="g5E-i5-im1"/>
-                                    <constraint firstItem="ali-f0-IoR" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leadingMargin" constant="-10" id="grm-Sq-CuJ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ali-f0-IoR" secondAttribute="trailing" constant="-16" id="g5E-i5-im1"/>
+                                    <constraint firstItem="ali-f0-IoR" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leadingMargin" constant="-16" id="grm-Sq-CuJ"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="top" secondItem="Fwf-YA-sUt" secondAttribute="bottom" constant="8" id="h3q-uJ-ytq"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="width" secondItem="Fwf-YA-sUt" secondAttribute="width" id="iEt-yP-9TB"/>
                                     <constraint firstAttribute="centerX" secondItem="ali-f0-IoR" secondAttribute="centerX" id="ioB-ZJ-V8X"/>
@@ -1127,8 +1127,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="ayD-aO-abE"/>
         <segue reference="Ofl-ge-zJA"/>
-        <segue reference="odR-uy-EdS"/>
+        <segue reference="Vdd-ES-ANp"/>
+        <segue reference="INS-bW-mhm"/>
         <segue reference="S6u-ie-MuC"/>
-        <segue reference="jyg-d3-m4b"/>
     </inferredMetricsTieBreakers>
 </document>

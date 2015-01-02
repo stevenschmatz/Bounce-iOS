@@ -3,3 +3,5 @@
 //
 
 #import "FlatUIKit.h"
+#import "UITableViewCell+FlatUI.h"
+#import "UIColor+FlatUI.h"

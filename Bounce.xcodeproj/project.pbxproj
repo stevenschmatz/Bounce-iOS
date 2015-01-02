@@ -31,6 +31,7 @@
 		008A2CCE1A544C5B0011A1AF /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A2CCC1A544C5B0011A1AF /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		008A2CD11A544D170011A1AF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A2CD01A544D170011A1AF /* SignUpViewController.m */; };
 		008A2CD41A55D2720011A1AF /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A2CD31A55D2720011A1AF /* LaunchViewController.m */; };
+		00C418751A564A8400C82EA8 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C418741A564A8400C82EA8 /* ChatTableViewController.swift */; };
 		28008EDE1A4897EA0014929D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDB1A4897EA0014929D /* TwitterKit.framework */; };
 		28008EDF1A4897EA0014929D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */; };
 		28008EE01A4897EA0014929D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28008EDD1A4897EA0014929D /* Fabric.framework */; };
@@ -105,6 +106,7 @@
 		008A2CD21A55D2720011A1AF /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		008A2CD31A55D2720011A1AF /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		00A4DD491A5333BA003D96CA /* Bounce-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bounce-Bridging-Header.h"; sourceTree = "<group>"; };
+		00C418741A564A8400C82EA8 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		28008EDB1A4897EA0014929D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		28008EDC1A4897EA0014929D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		28008EDD1A4897EA0014929D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				288547B41A4896E100FAC16F /* Bounce.xcdatamodeld */,
 				288547B01A4896E100FAC16F /* Supporting Files */,
 				00A4DD491A5333BA003D96CA /* Bounce-Bridging-Header.h */,
+				00C418741A564A8400C82EA8 /* ChatTableViewController.swift */,
 			);
 			path = Bounce;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				288547B61A4896E100FAC16F /* Bounce.xcdatamodeld in Sources */,
 				008A2CD11A544D170011A1AF /* SignUpViewController.m in Sources */,
 				0071B2811A53AAEB00057FBB /* UIFont+FlatUI.m in Sources */,
+				00C418751A564A8400C82EA8 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

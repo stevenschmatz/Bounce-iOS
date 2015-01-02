@@ -94,5 +94,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)unwind:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

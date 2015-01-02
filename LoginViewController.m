@@ -30,6 +30,7 @@
 @interface LoginViewController () {
     UIPopoverController *_popoverController;
 }
+- (IBAction)CancelButton:(id)sender;
 @property (weak, nonatomic) IBOutlet FUITextField *Username;
 @property (weak, nonatomic) IBOutlet FUITextField *Password;
 @property (weak, nonatomic) IBOutlet FUIButton *LoginButton;
@@ -100,5 +101,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (IBAction)unwind:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

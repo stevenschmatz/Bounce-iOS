@@ -197,6 +197,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="yjl-Fs-Hnd"/>
                     <connections>
                         <outlet property="LoginButton" destination="32d-i4-lP8" id="ldS-Cw-c68"/>
                         <outlet property="RegisterButton" destination="YgC-0v-KoB" id="7DS-Rj-viJ"/>
@@ -350,7 +351,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8AY-nQ-JN0">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="flipHorizontal" id="odR-uy-EdS"/>
+                                                <action selector="unwind:" destination="PpL-Ks-gER" id="bOP-rk-4Bc"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -472,7 +473,7 @@
                                                 <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0dw-1Y-gJY">
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <connections>
-                                                        <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="Vdd-ES-ANp"/>
+                                                        <action selector="unwind:" destination="xh1-g5-35K" id="9lv-Vm-Ea4"/>
                                                     </connections>
                                                 </barButtonItem>
                                             </navigationItem>
@@ -1126,10 +1127,9 @@
         <image name="launch" width="321" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="INS-bW-mhm"/>
-        <segue reference="odR-uy-EdS"/>
-        <segue reference="Ofl-ge-zJA"/>
-        <segue reference="S6u-ie-MuC"/>
         <segue reference="ayD-aO-abE"/>
+        <segue reference="Ofl-ge-zJA"/>
+        <segue reference="INS-bW-mhm"/>
+        <segue reference="S6u-ie-MuC"/>
     </inferredMetricsTieBreakers>
 </document>

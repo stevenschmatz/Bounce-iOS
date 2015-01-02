@@ -116,6 +116,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func customizeNavBar () {
         var color: UIColor = UIColor.seaGreenColor()
         UINavigationBar.appearance().barTintColor = color
+        
+        // untested
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(object: UIFont(name: "Helvetica", size: 16.0)!, forKey: NSFontAttributeName), forState: UIControlState.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.darkerSeaGreenColor()], forState:.Selected)
     }
 
 }

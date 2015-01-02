@@ -218,27 +218,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="227-kU-152"/>
-                                    <constraint firstAttribute="width" constant="600" id="Fqg-Pp-vVu"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="OYC-aQ-Hqh"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="SIGN IN" id="K4G-pV-NGd">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8AY-nQ-JN0"/>
-                                    </navigationItem>
-                                </items>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Fqg-Pp-vVu"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="-81" width="400" height="55"/>
-                                </variation>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-yv-z3u" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="1" y="55" width="600" height="545"/>
                                 <subviews>
@@ -273,15 +252,21 @@
                                             <rect key="frame" x="10" y="128" width="379" height="70"/>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-HI-2HU" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-HI-2HU" customClass="FUIButton">
                                         <rect key="frame" x="195" y="227" width="215" height="92"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="71r-aH-hTi"/>
                                             <constraint firstAttribute="height" constant="70" id="far-LL-ahf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <state key="normal" title="SIGN IN">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="SIGN IN">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -292,14 +277,21 @@
                                             <segue destination="ikc-7f-r4W" kind="presentation" id="Ofl-ge-zJA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-hb-RGF" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-hb-RGF" customClass="FUIButton">
                                         <rect key="frame" x="161" y="451" width="277" height="71"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ECX-TF-xXH"/>
                                             <constraint firstAttribute="width" constant="277" id="K3C-Ne-lnu"/>
                                         </constraints>
-                                        <state key="normal" title="Recover Password">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Recover Password">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -342,6 +334,35 @@
                                     </mask>
                                 </variation>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Tb-bFU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="227-kU-152"/>
+                                    <constraint firstAttribute="width" constant="600" id="Fqg-Pp-vVu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="OYC-aQ-Hqh"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="SIGN IN" id="K4G-pV-NGd">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8AY-nQ-JN0">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="odR-uy-EdS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Fqg-Pp-vVu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-81" width="400" height="55"/>
+                                </variation>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.84524556614563551" green="1" blue="0.92183884811683214" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -381,14 +402,20 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-cF-pXI" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfr-mD-fad" customClass="FUIButton">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfr-mD-fad" customClass="FUIButton">
                                         <rect key="frame" x="128" y="266" width="330" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="2xG-Wi-ISW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <state key="normal" title="NEXT">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="NEXT">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" size="25" name="HelveticaNeue-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                         </state>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="-135" y="266" width="330" height="68"/>
@@ -436,14 +463,19 @@
                                             <constraint firstAttribute="width" constant="600" id="fzv-kn-zfG"/>
                                             <constraint firstAttribute="height" constant="55" id="w4P-YY-bGH"/>
                                         </constraints>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textAttributes>
                                         <items>
-                                            <navigationItem title="Register" id="MLD-TJ-5L0"/>
+                                            <navigationItem title="Register" id="MLD-TJ-5L0">
+                                                <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0dw-1Y-gJY">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <segue destination="BYZ-38-t0r" kind="presentation" id="Vdd-ES-ANp"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
                                         </items>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="fzv-kn-zfG"/>
-                                            </mask>
-                                        </variation>
                                     </navigationBar>
                                 </subviews>
                                 <constraints>
@@ -457,8 +489,8 @@
                                     <constraint firstAttribute="centerY" secondItem="cfr-mD-fad" secondAttribute="centerY" id="cbq-BB-j1f"/>
                                     <constraint firstItem="Db1-D5-cea" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leading" constant="10" id="fCC-l2-ubH"/>
                                     <constraint firstAttribute="trailing" secondItem="cfr-mD-fad" secondAttribute="trailing" constant="-10" id="faC-dP-aYt"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="ali-f0-IoR" secondAttribute="trailing" constant="-16" id="g5E-i5-im1"/>
-                                    <constraint firstItem="ali-f0-IoR" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leadingMargin" constant="-16" id="grm-Sq-CuJ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ali-f0-IoR" secondAttribute="trailing" constant="-10" id="g5E-i5-im1"/>
+                                    <constraint firstItem="ali-f0-IoR" firstAttribute="leading" secondItem="4cR-cF-pXI" secondAttribute="leadingMargin" constant="-10" id="grm-Sq-CuJ"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="top" secondItem="Fwf-YA-sUt" secondAttribute="bottom" constant="8" id="h3q-uJ-ytq"/>
                                     <constraint firstItem="FWL-04-16Y" firstAttribute="width" secondItem="Fwf-YA-sUt" secondAttribute="width" id="iEt-yP-9TB"/>
                                     <constraint firstAttribute="centerX" secondItem="ali-f0-IoR" secondAttribute="centerX" id="ioB-ZJ-V8X"/>
@@ -1093,9 +1125,10 @@
         <image name="launch" width="321" height="481"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="INS-bW-mhm"/>
-        <segue reference="Ofl-ge-zJA"/>
         <segue reference="ayD-aO-abE"/>
+        <segue reference="Ofl-ge-zJA"/>
+        <segue reference="odR-uy-EdS"/>
         <segue reference="S6u-ie-MuC"/>
+        <segue reference="jyg-d3-m4b"/>
     </inferredMetricsTieBreakers>
 </document>
